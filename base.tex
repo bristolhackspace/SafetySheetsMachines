@@ -26,14 +26,15 @@
 \setlength{\hoffset}{-2cm}
 \setlength{\voffset}{-2cm}
 
-% DECAL
+% DECAL function
 %
-% Extract a symbol from the ISO document. And show it together with the title and warning text.
+% The decal function takes 5 inputs and extracts a symbol from the Italian ISO document that is included in this repository. The function then displays the symbol together with the title and warning text.
 %
-% Params:		Page with the symbol on it.
-%			Title
-%			Warning text
-%			Y height on the page.
+% Parameters:		#1 Page with the symbol on it in the document.
+%			#2 Title
+%			#3 Y height on the page.
+%			#4 X location on the page. (not sure on this)
+%			#5 Warning subtext
 %
 \newcommand{\decal}[5]{
 \begin{minipage}{\linewidth}
@@ -41,9 +42,9 @@
 	       \vspace{0pt}
 	       % The ISO document has a 'gutter' - so we shift the X a bit on the left/right page.
 	       %
-		\ifthenelse{\isodd{#1}}{
+		\ifthenelse{\isodd{#1}}{ %if the pagenumber is odd, use this location for the image
 			\includegraphics[width=0.9\textwidth,page=#1,viewport=103 #3 291 #4,clip=true]{13GR_PistopioimeniSimansi_ISO_7010.pdf}
-		}{
+		}{ %else (because the pagenumber is even), use this location for the image.
 			\includegraphics[width=0.9\textwidth,page=#1,viewport=70 #3 261 #4,clip=true]{13GR_PistopioimeniSimansi_ISO_7010.pdf}
 		}
 	\end{minipage}
@@ -51,9 +52,9 @@
 		\setlength{\parindent}{4em}
 		\setlength{\parskip}{1.2em}
 	       \vspace{0pt}\raggedright
-		{\LARGE \textbf{#2}}
+		{\LARGE \textbf{#2}} %include title text in bold and such
 	
-		#5
+		#5 %include warning subtext
 		\vspace{0.5cm}
 	\end{minipage}
 \end{minipage}
@@ -75,20 +76,21 @@
 }
 
 
-% Define classes for Action, Prohibit and Warn
+% Define classes for Action, Prohibit and Warn. These each take three inputs.
 %
-% Turns out that the symbols are a bit shifted in the Y position or size depending on what
-% class they are. So we split them into the three sections that have height differences.
+% Turns out that the symbols extracted from the ISO document with \decal are a bit 
+% shifted in the Y position or size depending on what class they are. So we split
+% them into the three sections that have height differences.
 %
-% Params:		Page with the symbol on it.
+% Parameters:		Page with the symbol on it. Actual pagenumber, not the number on the page!
 %			Title
-%			Warning text
+%			Warning subtext
 %
 \newcommand{\action}[3]{\decal{#1}{#2}{520}{715}{#3}}
 \newcommand{\prohib}[3]{\decal{#1}{#2}{495}{690}{#3}}
 \newcommand{\warn}[3]{\decal{#1}{#2}{520}{715}{#3}}
 
-%% Convenience round box to call extra attention to something.
+%% Command to create a round box to call extra attention to something.
 %%
 \newcommand{\smallicontext}[2]{%
 \begin{mdframed}[roundcorner=4pt] 
@@ -99,25 +101,25 @@
 }
 
 % machinePage
-% A full page with a machine on it.
+% A full page with a machine on it. Takes 5 inputs.
 %
-% Params:		Machine name
-%			Tokens for standard instrutions: Zero or more from
-%				Approval		Trustee approval needed.
+% Params:		#1 Machine name
+%			#2 Tokens for standard instrutions: Zero or more from
+%				Approval	Trustee approval needed.
 %				Noise		Not after 19:00
-%				Two			Two people required
-%				Log			use must be logged
+%				Two		Two people required
+%				Log		use must be logged
 %				Dewalt		Attach dewalt dutch extractor.
-%			Specific instructions 
-%			Warnings, Symbols
-%			Extra footer/bottom of the page text
+%			#3 Specific instructions - added to the above text.
+%			#4 Warnings, Symbols - main symbols on page.
+%			#5 Extra footer/bottom of the page text
 %
 \newcommand{\machinePage}[5]{%
 \begin{center}
 	\vspace{0cm}
-	{\fontsize{50}{60} \textbf{#1}}
+	{\fontsize{50}{60} \textbf{#1}}%Machine name
  
-	\action{49}{%
+	\action{49}{% Determines if you require approval / mandatory instructions / safety instructions
 		\textbf{%
  		\IfSubStr{#2}{Approval}%
 			{Instructions \& Approval Mandatory}
@@ -127,8 +129,8 @@
 		\IfSubStr{#2}{NoMandatory}{}{Instruction \textbf{prior} to use is \textbf{mandatory}. Check the wiki for who can help you.}
 		\IfSubStr{#2}{Approval}{You must also have a `\textbf{dangerous equipment waiver}' filed with the foundations trustees and been given \textbf{approval or card access} to use the machine.}{}
 			
-		#3
-
+		#3 % added to above instructions
+		
 		\IfSubStr{#2}{Noise}{\smallicontext{\seventoseven}{
 			Machine can only be used between 07:00 - 19:00 (be kind to our neighbours)
 			}
@@ -145,7 +147,7 @@
 	
 	\vspace{0.2cm}
 	#5
-
+%footer text at the bottom of the page.
 	If a machine is not clean or appears broken - then report this to the mailing list. Clean/fix prior to use.
 
 	\textbf{Report any damage, issues or accident within 24 hours to the mailing list.}
