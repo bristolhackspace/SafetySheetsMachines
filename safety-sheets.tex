@@ -97,8 +97,8 @@ Make sure you know where the \textbf{emergency stops and fire extinguishers} are
 %	\action{64}{Wear a mask}{}
 %	\action{67}{Wear a welding mask}{}
 %	\action{74}{Use protective apron}{}
-	\prohib{75}{General prohibition sign}{}
-	\warn{38}{General warning sign}{}
+%	\prohib{75}{General prohibition sign}{}
+%	\warn{38}{General warning sign}{}
 	\warn{97}{No Dogs allowed outside.}{Keep them in the hackspace. I want to pet them.}
 %	\warn{110}{Laser beam}{Keep the lid closed at all times. If you bypass the safety interlocks--then you are an ass.}
 %	\prohib{100}{Do not wear gloves}{}
@@ -115,7 +115,7 @@ Make sure you know where the \textbf{emergency stops and fire extinguishers} are
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %: Wood Workshop
 \machinePage{Wood Workshop}{NoMandatory}{
-The wood shop is separate from the rest of the space for dust- and clean-tool control reasons.  
+The wood shop is separated from the rest of the space for dust- and clean-tool control reasons.  
 
 \textbf{Keep wood-tools separate from other tools and free of (machining) oil.}
 
@@ -140,9 +140,8 @@ Do not attempt to change the drill speed, as the gearing is non-standard.
 Make sure you clamp your workpiece well - to avoid spinning.
 }{
 \prohib{100}{Do not wear gloves}{Especially strong leather ones. They get caught easily and then `help' ripping body parts off.}
-
 \action{52}{Eye protection recommended}{Swarf will fly. Marterial can come loose.}
-\action{58}{Wear protective clothing}{Wear tight fitting clothing, keep long hair out tied up, no jewellery or anything else that can be caught by the machine.}
+\action{58}{Wear protective clothing}{Wear tight fitting clothing, keep long hair tied up, no jewellery or anything else that can be caught by the machine.}
 	
 \warn{130}{Crushing}{Risk of crushing -- the machine does not have any sensors that detect obstacles. The drill is operated by gears. They will not slip or stop.
 This includes things such as your hands or tools you've left on the workspace.}
@@ -153,13 +152,15 @@ This includes things such as your hands or tools you've left on the workspace.}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %: Wood Lathe
-\machinePage{Wood Lathe}{Induction}{
+\machinePage{Wood Lathe}{Induction,dust,InPerson}{
 This machine is for WOOD only.
 }{
 \action{64}{Wear a mask when needed}{Especially when cutting materials such as MDF, or when sanding}
 \action{58}{Wear protective clothing}{Wear tight fitting clothing, keep long hair tied up, no jewellery or anything else that can be caught by the machine.}
 \action{61}{Eye protection mandatory}{} 
-\prohib{100}{Not recommended to wear gloves}{}
+\prohib{100}{Do not wear gloves}{}
+\warn{124}{Spinning material}{Risk of laceration and entanglement.}
+\warn{128}{Sharp tools in contact with spinning material}{Tools could be caught and thrown.}
 }{
 }
 
@@ -169,7 +170,7 @@ This machine is for WOOD only.
 This machine is for WOOD only.
 
 }{
-\action{58}{Wear protective clothing}{Wear tight fitting clothing, keep long hair out tied up, no jewellery or anything else that can be caught by the machine.}
+\action{58}{Wear protective clothing}{Wear tight fitting clothing, keep long hair tied up, no jewellery or anything else that can be caught by the machine.}
 \action{52}{Eye protection recommended}{}
 \action{51}{Ear protection recommended}{Note also that this machine should not be used after 19:00 if it is that noisy}
 \action{64}{Wear a mask when needed}{Especially when cutting materials such as MDF}
@@ -178,11 +179,11 @@ This machine is for WOOD only.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %: Circular Table Saw
-\machinePage{Table Saw}{Induction,Dust}{
+\machinePage{Table Saw}{Induction,Dust,Online}{
 This machine is for WOOD only.
 }{
 \action{51}{Ear protection strongly recommended}{Note also that this machine should not be used after 19:00}
-\action{58}{Wear protective clothing}{Wear tight fitting clothing, keep long hair out tied up, no jewellery or anything else that can be caught by the machine.}
+\action{58}{Wear protective clothing}{Wear tight fitting clothing, keep long hair tied up, no jewellery or anything else that can be caught by the machine.}
 \action{52}{Eye protection recommended}{Especially when using very small cutters.}
 \action{64}{Wear a mask when needed}{Especially when cutting materials such as MDF}
 \prohib{100}{Do not wear gloves}{Especially strong leather ones. They get caught easily and then `help' ripping body parts off.}
@@ -191,11 +192,11 @@ This machine is for WOOD only.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %: Wood Bandsaw
-\machinePage{Wood Bandsaw}{Induction,dust}{
+\machinePage{Wood Bandsaw}{Induction,dust,InPerson}{
 This machine is for WOOD only.
 }{
 \action{51}{Ear protection strongly recommended}{Note also that this machine should not be used after 19:00}
-\action{58}{Wear protective clothing}{Wear tight fitting clothing, keep long hair out tied up, no jewellery or anything else that can be caught by the machine.}
+\action{58}{Wear protective clothing}{Wear tight fitting clothing, keep long hair tied up, no jewellery or anything else that can be caught by the machine.}
 \action{52}{Eye protection recommended}{}
 \action{64}{Wear a mask when needed}{Especially when cutting materials such as MDF}
 }{
@@ -203,12 +204,12 @@ This machine is for WOOD only.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %: Planer
-\machinePage{Planer}{Induction}{
+\machinePage{Planer}{}{%no specific warnings here?
 This machine is for WOOD only.
 }{
 \warn{131}{Counterrotating rollers}{This machine will `pull' you in using counter rotating rollers. Which ALSO have a ratchet mechanism.}
 \action{51}{Ear protection strongly recommended}{Note also that this machine should not be used after 19:00}
-\action{58}{Wear protective clothing}{Wear tight fitting clothing, keep long hair out tied up, no jewellery or anything else that can be caught by the machine.}
+\action{58}{Wear protective clothing}{Wear tight fitting clothing, keep long hair tied up, no jewellery or anything else that can be caught by the machine.}
 \action{52}{Eye protection recommended}{}
 \action{64}{Wear a mask when needed}{Especially when cutting materials such as MDF}
 \prohib{100}{Do not wear gloves}{Especially strong leather ones. They get caught easily and then `help' ripping body parts off.}
@@ -217,11 +218,12 @@ This machine is for WOOD only.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %: Jointer
-\machinePage{Jointer}{Induction,dust}{
+\machinePage{Jointer}{dust}{
+The Dust extractor is not strong enough to pull all of the wood dust from the jointer hose, so you may need to manually empty this in to the bin.
 }{
 \warn{128}{Sharp rotating elements}{This machine is essentially a cutter without any guard whatsoever.}
 \action{51}{Ear protection strongly recommended}{Note also that this machine should not be used after 19:00}
-\action{58}{Wear protective clothing}{Wear tight fitting clothing, keep long hair out tied up, no jewellery or anything else that can be caught by the machine.}
+\action{58}{Wear protective clothing}{Wear tight fitting clothing, keep long hair tied up, no jewellery or anything else that can be caught by the machine.}
 \action{52}{Eye protection recommended}{}
 \action{64}{Wear a mask when needed}{Especially when cutting materials such as MDF}
 \prohib{100}{Do not wear gloves}{Especially strong leather ones. They get caught easily and then `help' ripping body parts off.}
@@ -233,12 +235,37 @@ This machine is for WOOD only.
 \machinePage{Wood Router}{}{
 This machine is for WOOD only.
 }{
-\action{58}{Wear protective clothing}{Wear tight fitting clothing, keep long hair out tied up, no jewellery or anything else that can be caught by the machine.}
+\action{58}{Wear protective clothing}{Wear tight fitting clothing, keep long hair tied up, no jewellery or anything else that can be caught by the machine.}
 \action{52}{Eye protection recommended}{}
 \action{51}{Ear protection recommended}{Note also that this machine should not be used after 19:00 if it is that noisy}
 \action{64}{Wear a mask when needed}{Especially when cutting materials such as MDF}
 \warn{128}{Sharp rotating elements}{Bypassing or using your fingers to hold the guard open is downright stupid.}
 }{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%: Belt and Disc Sander
+\machinePage{Belt and Disc Sander} %title of machine.
+	{NoMandatory, Dust} %safety options: Induction, blank (instruction mandatory), NoMandatory
+		% Additionally, options include: Online, InPerson, Log, Dust
+	{}
+	{%Main warnings, alerts, etc.
+%	\action{49}{You can use the block of rubber to clean the belt and disc.}{It sits on the dust extractor tubes. Run the rubber over the belt and disc while it is running.}
+%	\action{50}{Refer to instruction manual/booklet}{}
+%	\action{51}{Wear ear protection}{}
+%	\action{52}{Wear eye protection}{}
+%	\action{56}{Wear safety footwear}{}
+%	\action{57}{Wear protective gloves}{}
+%	\action{58}{Wear protective clothing}{}
+	\action{64}{A mask is a good idea.}{Let others know if you're sanding toxic wood.} %Sandy Toxvig.
+%	\prohib{75}{General prohibition sign}{}
+	\warn{38}{General warning sign}{}
+	\warn{107}{Wood can heat up}{Wood can heat up and burn if sanded for too long.}
+
+	}
+	{%Final footer warning
+	
+	}
+
 
 
 %%%%%%%%%%
@@ -267,7 +294,7 @@ This includes things such as your hands (do not lean on the blue rail) or tools 
 }{
 \prohib{100}{Do not wear gloves}{Especially strong leather ones. They get caught easily and then `help' ripping body parts off.}
 \action{52}{Eye protection recommended}{Swarf will fly. Cutters can come loose. Broken cutters can fly very far and are razor sharp.}
-\action{58}{Wear protective clothing}{Wear tight fitting clothing, keep long hair out tied up, no jewellery or anything else that can be caught by the machine.}
+\action{58}{Wear protective clothing}{Wear tight fitting clothing, keep long hair tied up, no jewellery or anything else that can be caught by the machine.}
 \warn{125}{Crushing}{Risk of crushing -- the machine does not have any sensors that detect obstacles.
 
 Note that it can also run very slow; barely noticeable.}
@@ -325,7 +352,7 @@ Be careful when using the auto-feed; especially with cutters near the revolving 
 }{
 \prohib{100}{Do not wear gloves}{Especially strong leather ones. They get caught easily and then `help' ripping body parts off.}
 \action{52}{Eye protection recommended}{Swarf will fly. Cutters can come loose. Broken cutters can fly very far and are razor sharp.}
-\action{58}{Wear protective clothing}{Wear tight fitting clothing, keep long hair out tied up, no jewellery or anything else that can be caught by the machine.}
+\action{58}{Wear protective clothing}{Wear tight fitting clothing, keep long hair tied up, no jewellery or anything else that can be caught by the machine.}
 \warn{125}{Crushing}{Risk of crushing -- the machine does not have any sensors that detect obstacles.
 
 Note that it can also run very slow; barely noticeable.}
@@ -338,7 +365,7 @@ Clean after use -- especially when you have used coolant or have used metals tha
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %: Slijpsteen
 \machinePage{Large Grinder}{}{}{
-\action{58}{Wear protective clothing}{Wear tight fitting clothing, keep long hair out tied up, no jewellery or anything else that can be caught by the machine.}
+\action{58}{Wear protective clothing}{Wear tight fitting clothing, keep long hair tied up, no jewellery or anything else that can be caught by the machine.}
 \action{52}{Eye protection needed}{}
 \action{51}{Ear protection recommended}{}
 }{}
@@ -350,7 +377,7 @@ Use plenty of cutting oil, \textsc{wd40} or similar.
 
 Do not leave unattended (not in the least as you may want to keep lubricating it to get a nice cut).
 }{
-\action{58}{Wear protective clothing}{Wear tight fitting clothing, keep long hair out tied up, no jewellery or anything else that can be caught by the machine.}
+\action{58}{Wear protective clothing}{Wear tight fitting clothing, keep long hair tied up, no jewellery or anything else that can be caught by the machine.}
 \warn{128}{Sharp rotating elements}{}
 \action{52}{Eye protection recommended}{}
 }{
@@ -361,7 +388,7 @@ Do not leave unattended (not in the least as you may want to keep lubricating it
 \machinePage{Metal bandsaw}{}{
 Suitable for metal; hard wood and some types of plastics. 
 }{
-\action{58}{Wear protective clothing}{Wear tight fitting clothing, keep long hair out tied up, no jewellery or anything else that can be caught by the machine.}
+\action{58}{Wear protective clothing}{Wear tight fitting clothing, keep long hair tied up, no jewellery or anything else that can be caught by the machine.}
 \action{52}{Eye protection recommended}{}
 \action{51}{Ear protection recommended}{Note also that this machine should not be used after 19:00 if it is that noisy}
 \warn{128}{Sharp rotating elements}{Bypassing or using your fingers to hold the guard open is downright stupid.}
@@ -382,7 +409,7 @@ Use the correct drill speed (higher for aluminium, low for steel, very low for s
 Use drilling oil when needed (when in doubt - always use the green oil).
 }{
 \action{52}{Eye protection recommended}{Sharp bits will fly, drills snap.}
-\action{58}{Wear protective clothing}{Wear tight fitting clothing, keep long hair out tied up, no jewellery or anything else that can be caught by the machine.}
+\action{58}{Wear protective clothing}{Wear tight fitting clothing, keep long hair tied up, no jewellery or anything else that can be caught by the machine.}
 \prohib{100}{Wearing gloves is forbidden}{Especially strong leather ones. They get caught easily and then `help' ripping body parts off. 
 }}
 {
@@ -411,7 +438,7 @@ Noise wise -- be considerate to our neighbours -- especially in the evenings.
 
 Very thin (latex) gloves that easily tear are ok.}
 \action{52}{Eye protection recommended}{Especially when milling. Swarf will fly. Cutters can come loose. Broken cutters can fly very far and are razor sharp.}
-\action{58}{Wear protective clothing}{Wear tight fitting clothing, keep long hair out tied up, no jewellery or anything else that can be caught by the machine.}
+\action{58}{Wear protective clothing}{Wear tight fitting clothing, keep long hair tied up, no jewellery or anything else that can be caught by the machine.}
 \warn{128}{Sharp rotating elements}{This machine is essentially a cutter without any guard whatsoever.}
 \warn{117}{Slippery surface}{Floor will get very slippery; especially when using coolant.}
 }{
@@ -429,7 +456,7 @@ This machine is for metal sanding - both ferrous and non-ferrous metals are allo
 \textbf{Connect a shopvac/vacuum cleaner to keep the dust under control.}
 
 }{
-\action{58}{Wear protective clothing}{Wear tight fitting clothing, keep long hair out tied up, no jewellery or anything else that can be caught by the machine.}
+\action{58}{Wear protective clothing}{Wear tight fitting clothing, keep long hair tied up, no jewellery or anything else that can be caught by the machine.}
 \action{51}{Ear protection recommended}{Note also that this machine should not be used after 19:00 -- it is that noisy!}
 \action{52}{Eye protection recommended}{}
 \action{64}{Wear a mask when needed}{And keep the dust under control by connecting the vacuum cleaner or a shop vac. The grit is both unhealthy \& damaging to other equipment.}
@@ -455,7 +482,7 @@ Let the sander do its work - do not apply much pressure (things will burn, you'l
 \action{49}{Dust extraction mandatory}{Use the dust extractor. Always.}
 \action{64}{Wear a mask when needed}{Depending on the wood being sanded.}
 \action{52}{Eye protection recommended}{}
-\action{58}{Wear protective clothing}{Wear tight fitting clothing, keep long hair out tied up, no jewellery or anything else that can be caught by the machine.}
+\action{58}{Wear protective clothing}{Wear tight fitting clothing, keep long hair tied up, no jewellery or anything else that can be caught by the machine.}
 }{
 Noise wise -- be considerate to our neighbours -- especially in the evenings.
 }
@@ -531,94 +558,94 @@ Do not run unattended.  Stay at the space when it is in use or when it is still 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %:  Welding kit and gas
-\machinePage{Welding equipment}{Log}{
-Gas cylinders must be kept mounted in their stand with a \textbf{safety strap} at all times.
+%\machinePage{Welding equipment}{Log}{
+%Gas cylinders must be kept mounted in their stand with a \textbf{safety strap} at all times.
 
-There should never be more than a total125L of `water equivalent' volume, aggregated across all bottles (full or empty) at the space.
-}{
-\action{67}{Wear a welding mask}{}
-\action{57}{Wear protective gloves}{}
-\warn{128}{Pressurised Cylinders}{}
-\action{74}{Use protective apron}{}
-}{
-Do not forget to close the valves on the gas bottles post use.
+%There should never be more than a total125L of `water equivalent' volume, aggregated across all bottles (full or empty) at the space.
+%}{
+%\action{67}{Wear a welding mask}{}
+%\action{57}{Wear protective gloves}{}
+%\warn{128}{Pressurised Cylinders}{}
+%\action{74}{Use protective apron}{}
+%}{
+%Do not forget to close the valves on the gas bottles post use.
 
-If you have empty bottles; be sure to get them refilled or remove them from the space. 
+%If you have empty bottles; be sure to get them refilled or remove them from the space. 
 
-There should \textbf{never be more than a 125 litres} of `water equivalent' volume present at the space (aggregated across all cylinders, \textbf{empty or full}, pressured or unpressured).
+%There should \textbf{never be more than a 125 litres} of `water equivalent' volume present at the space (aggregated across all cylinders, \textbf{empty or full}, pressured or unpressured).
 
-This is because the space does \textbf{not have the required permits} for crossing the \textbf{125L limit}.
-}
+%This is because the space does \textbf{not have the required permits} for crossing the \textbf{125L limit}.
+%}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %:   Pottery oven
-\machinePage{Pottery Oven}{Mandatory}{
-This oven is for pottery, ceramics, annealing and similar use. Up to 1200\degree C.
+%\machinePage{Pottery Oven}{Mandatory}{
+%This oven is for pottery, ceramics, annealing and similar use. Up to 1200\degree C.
 
-Please write down the electricity use (kWh counter) and pay \euro{0.25} to the foundation (NL30 TRIO 0197 6945 19).
-}{
-\prohib{75}{No mid-bake opening}{This oven is not designed to be opened while hot. Or to have contents removed (or added) while hot.}
-\prohib{75}{No fumes}{This oven has no exhaust. So no metal melting or similar.}
-\warn{118}{Bare electric wires inside}{Do not open the oven while powered on. The heating spirals are not isolated.}
-}{
-Stay with the machine while it is powered.
-}
+%Please write down the electricity use (kWh counter) and pay \euro{0.25} to the foundation (NL30 TRIO 0197 6945 19).
+%}{
+%\prohib{75}{No mid-bake opening}{This oven is not designed to be opened while hot. Or to have contents removed (or added) while hot.}
+%\prohib{75}{No fumes}{This oven has no exhaust. So no metal melting or similar.}
+%\warn{118}{Bare electric wires inside}{Do not open the oven while powered on. The heating spirals are not isolated.}
+%}{
+%Stay with the machine while it is powered.
+%}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %: Blacksmithing Oven
-\machinePage{Blacksmithing Oven}{Mandatory, Two}{
+%\machinePage{Blacksmithing Oven}{Mandatory, Two}{
 
-When using - make sure the that you have ready access to the main shut-off valve (i.e. so you do not have to reach over something hot) and that the tubing is well out of harms way.
+%When using - make sure the that you have ready access to the main shut-off valve (i.e. so you do not have to reach over something hot) and that the tubing is well out of harms way.
 
-Keep track of your gas use \& report this.
-}{
-\warn{49}{Hot}{Oven will be hot}
-\action{57}{Wear protective gloves}{}
-\action{52}{Eye protection recommended}{}
-\action{58}{Protective clothing recommended}{}
-\action{49}{No abrasive work or grinding allowed while the oven is in operation.}{}
-}{
-Noise wise -- be considerate to our neighbours -- especially in the evenings.
+%Keep track of your gas use \& report this.
+%}{
+%\warn{49}{Hot}{Oven will be hot}
+%\action{57}{Wear protective gloves}{}
+%\action{52}{Eye protection recommended}{}
+%\action{58}{Protective clothing recommended}{}
+%\action{49}{No abrasive work or grinding allowed while the oven is in operation.}{}
+%}{
+%Noise wise -- be considerate to our neighbours -- especially in the evenings.
 
-Do not run unattended.  Stay at the space when it is in use or when it is still hot. If it is still hot when you leave; make sure this is clearly signposted.
-}
+%Do not run unattended.  Stay at the space when it is in use or when it is still hot. If it is still hot when you leave; make sure this is clearly signposted.
+%}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %: Jung Surface Grinder
-\machinePage{Jung Surface Grinder}{Induction}{
-Be very gentle with the Z-axis; do not plunge or ram it into the surface.
+%\machinePage{Jung Surface Grinder}{Induction}{
+%Be very gentle with the Z-axis; do not plunge or ram it into the surface.
 
-If you notice any imbalance - stop immediately. Disk or machine can quickly destroy themselves.
-}{
-\prohib{75}{Carbide Aluminium Forbidden}{It is forbidden to grind Aluminium. Just don't. No carbide either}
-\action{52}{Eye protection mandatory}{Sparks will fly, the grinding disk can shatter}
-\action{58}{Wear protective clothing}{Wear tight fitting clothing, keep long hair out tied up, no jewellery or anything else that can be caught by the machine.}
-% \prohib{100}{Do not wear gloves}{Especially strong leather ones. They get caught easily and then `help' ripping body parts off.}
-\warn{125}{Crushing}{Risk of crushing -- the machine does not have any sensors that detect obstacles.}
-\warn{124}{Grinding wheel runs `invisibly}{%
-The grinding wheel will run very smooth, barely visible - and will continue to be dangerous for a minute or so after shutoff
-}
-\warn{117}{Slippery surface}{Floor will get very slippery; especially when using coolant.}
-\action{64}{Wear a mask when needed}{And be very careful with truly nasty material. Grinding carbide is not allowed.}
-\warn{108}{Explosion risk}{Aluminium Forbidden: Explosion risk in general; and especially in combination with rust/water based coolant}
-}
+%If you notice any imbalance - stop immediately. Disk or machine can quickly destroy themselves.
+%}{
+%\prohib{75}{Carbide Aluminium Forbidden}{It is forbidden to grind Aluminium. Just don't. No carbide either}
+%\action{52}{Eye protection mandatory}{Sparks will fly, the grinding disk can shatter}
+%\action{58}{Wear protective clothing}{Wear tight fitting clothing, keep long hair tied up, no jewellery or anything else that can be caught by the machine.}
+%% \prohib{100}{Do not wear gloves}{Especially strong leather ones. They get caught easily and then `help' ripping body parts off.}
+%\warn{125}{Crushing}{Risk of crushing -- the machine does not have any sensors that detect obstacles.}
+%\warn{124}{Grinding wheel runs `invisibly}{%
+%The grinding wheel will run very smooth, barely visible - and will continue to be dangerous for a minute or so after shutoff
+%}
+%\warn{117}{Slippery surface}{Floor will get very slippery; especially when using coolant.}
+%\action{64}{Wear a mask when needed}{And be very careful with truly nasty material. Grinding carbide is not allowed.}
+%\warn{108}{Explosion risk}{Aluminium Forbidden: Explosion risk in general; and especially in combination with rust/water based coolant}
+%}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %: 12 ton press
-\machinePage{Hydraulic Press}{}{
-}{
-\action{52}{Eye protection needed}{}}{
-}
+%\machinePage{Hydraulic Press}{}{
+%}{
+%\action{52}{Eye protection needed}{}}{
+%}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %  Zandstraalcabine
-\machinePage{Sanding Cabinet}{}{
-Do not spray at your hands/fingers. The gloves \textbf{will} ultimately give way and they are not cheap.
-}{
-}{
-Do switch off the compressor after use.
-}
+%\machinePage{Sanding Cabinet}{}{
+%Do not spray at your hands/fingers. The gloves \textbf{will} ultimately give way and they are not cheap.
+%}{
+%}{
+%Do switch off the compressor after use.
+%}
 
 
 
