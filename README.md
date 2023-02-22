@@ -12,12 +12,16 @@ Principle
 1) safety-sheets.tex
 
 	one entry for each machine called a MachinePage.
+	
 	Each MachinePage command needs 5 pairs of curly braces
+	
 		\machinepage{Name}{additional tokens}{specific instructions}{warning symbols}{footer information}
+	
 	Each warning symbol command takes 3 pairs of curly braces. These three commands exist because extracting the images from the Italian ISO document needs three different "offsets" within the pages in the ISO document
 		\warn{iso page number}{title}{subtitle}
 		\alert{iso page number}{title}{subtitle}
 		\prohib{iso page number}{title}{subtitle}
+		
 	Certain symbols act as commands in LaTeX and need to be escaped, such as & should be written with \&.
 
 2) base.tex
