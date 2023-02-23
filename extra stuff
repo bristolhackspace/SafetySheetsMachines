@@ -1,0 +1,379 @@
+
+%%%%%%%%%%
+%CNC ROOM
+%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%: Large CNC Cutter
+\machinePage{Large CNC Cutter}{}{
+}{
+\action{51}{Ear protection strongly recommended}{Note also that this machine should not be used after 19:00}
+\action{52}{Eye protection recommended}{Especially when using very small cutters.}
+\action{64}{Wear a mask when needed}{Especially when cutting materials such as MDF}
+\warn{124}{Machine can suddenly start}{%
+	Machine can suddenly start moving; and can move under its own command (even when the PC is off -- rely on the emergency stop buttons.).
+	
+	It will also start moving without warning -- for example when the PC\&software are (re)started.}
+\warn{130}{Crushing}{Risk of crushing -- the machine does not have any sensors that detect obstacles
+This includes things such as your hands (do not lean on the blue rail) or tools you've left on the workspace.
+}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%: Abene
+\machinePage{Abene Mill}{Induction}{
+}{
+\prohib{100}{Do not wear gloves}{Especially strong leather ones. They get caught easily and then `help' ripping body parts off.}
+\action{52}{Eye protection recommended}{Swarf will fly. Cutters can come loose. Broken cutters can fly very far and are razor sharp.}
+\action{58}{Wear protective clothing}{Wear tight fitting clothing, keep long hair tied up, no jewellery or anything else that can be caught by the machine.}
+\warn{125}{Crushing}{Risk of crushing -- the machine does not have any sensors that detect obstacles.
+
+Note that it can also run very slow; barely noticeable.}
+\warn{117}{Slippery surface}{Floor will get very slippery; especially when using coolant.}
+\warn{128}{Sharp rotating elements}{This machine is essentially a cutter without any guard whatsoever.}
+}{
+Only switch XYZ feeds when the machine is not running. Use the hand-wheel to get the gear fully locked in prior to starting the feed. Be sure to tighten all 4 nuts post rotating the head or all 4 nuts when moving the head laterally.
+
+Try to avoid getting coolant or similar on the slide-ways -- especially the Y slipway between machine and table. Use a shield or adjust the flow. Machine needs to be cleaned post use.  When using coolant -- also empty the recess on the left of the table and clean out the t-Slots until dry.
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%: Grote Laser
+\machinePage{Large CNC Laser cutter}{Logbook}{
+Be sure to check that cooling, air assist and fume extraction fan are all on.
+}{
+\warn{84}{Do not extinguish with water}{It has a high voltage (kV) power supply. Use the $CO_2$ extinguisher (on the pilar to your left). }
+\warn{110}{Laser beam}{Keep the lid closed at all times. If you bypass the safety interlocks -- you are an idiot.}
+}{
+Do not forget to switch on (and off post use) the compressor and fume extraction fan (in the corner near the electric distribution board.
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%: Kleine Laser
+\machinePage{Small CNC Laser cutter}{Extraction}{
+Be sure to check that water cooling pump, air pump (behind the machine) and fume extraction fan are all on.
+}{
+\warn{84}{Do not extinguish with water}{It has a high voltage (kV) power supply. Use the $CO_2$ extinguisher (on the pilar to your left).}
+\warn{110}{Laser beam}{Keep the lid closed at all times. If you bypass the safety interlocks -- you are an idiot.}
+}{
+Do not forget to switch the fume extraction fan (in the corner near the electric distribution board) post use.
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%:   Ultimakers
+\machinePage{Ultimaker 2 \& 2$^{+\mathsf{Extended}}$}{}{
+Do not walk away from the machine until the first 10 layers or so have been deposited. 
+
+OK to leave unattended after first 10 minutes when used with normal settings/materials.
+}{
+\warn{124}{Automatic start-up}{Machine may suddenly start moving. Also during power up.}
+\warn{123}{Hot surfaces}{The bed and the head will become (very) hot.}
+}{
+Keep the filament in a sealed container. Exposure to air (humidity) makes it brittle.
+}
+
+%%%%%
+%Metal Room
+%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%: Metal Lathe
+\machinePage{Metal Lathe}{Induction}{
+Be careful when using the auto-feed; especially with cutters near the revolving head.
+}{
+\prohib{100}{Do not wear gloves}{Especially strong leather ones. They get caught easily and then `help' ripping body parts off.}
+\action{52}{Eye protection recommended}{Swarf will fly. Cutters can come loose. Broken cutters can fly very far and are razor sharp.}
+\action{58}{Wear protective clothing}{Wear tight fitting clothing, keep long hair tied up, no jewellery or anything else that can be caught by the machine.}
+\warn{125}{Crushing}{Risk of crushing -- the machine does not have any sensors that detect obstacles.
+
+Note that it can also run very slow; barely noticeable.}
+\warn{117}{Slippery surface}{Floor may get slippery when using coolant.}
+% \warn{128}{Sharp rotating elements}{This machine is essentially a cutter without any guard whatsoever.}
+}{
+Clean after use -- especially when you have used coolant or have used metals that can rust easily or cause a galvanic reaction.
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%: Slijpsteen
+\machinePage{Large Grinder}{}{}{
+\action{58}{Wear protective clothing}{Wear tight fitting clothing, keep long hair tied up, no jewellery or anything else that can be caught by the machine.}
+\action{52}{Eye protection needed}{}
+\action{51}{Ear protection recommended}{}
+}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%: Metaal zaag
+\machinePage{Metal bandsaw}{}{
+Use plenty of cutting oil, \textsc{wd40} or similar. 
+
+Do not leave unattended (not in the least as you may want to keep lubricating it to get a nice cut).
+}{
+\action{58}{Wear protective clothing}{Wear tight fitting clothing, keep long hair tied up, no jewellery or anything else that can be caught by the machine.}
+\warn{128}{Sharp rotating elements}{}
+\action{52}{Eye protection recommended}{}
+}{
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%: Metal Bandsaw
+\machinePage{Metal bandsaw}{}{
+Suitable for metal; hard wood and some types of plastics. 
+}{
+\action{58}{Wear protective clothing}{Wear tight fitting clothing, keep long hair tied up, no jewellery or anything else that can be caught by the machine.}
+\action{52}{Eye protection recommended}{}
+\action{51}{Ear protection recommended}{Note also that this machine should not be used after 19:00 if it is that noisy}
+\warn{128}{Sharp rotating elements}{Bypassing or using your fingers to hold the guard open is downright stupid.}
+}{
+Use of cutting oil recommended !
+% No special comments/instructions.
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%: Hembrug Metal Drill Press
+\machinePage{Hembrug Drill press}{Mandatory}{
+Make sure you clamp your workpiece well - to avoid spinning.
+
+Let the drill do its work - do not apply much pressure (drill gets dull or will snaps).
+
+Use the correct drill speed (higher for aluminium, low for steel, very low for stainless steel (\textsc{rvs}). Use the table on the wall.
+
+Use drilling oil when needed (when in doubt - always use the green oil).
+}{
+\action{52}{Eye protection recommended}{Sharp bits will fly, drills snap.}
+\action{58}{Wear protective clothing}{Wear tight fitting clothing, keep long hair tied up, no jewellery or anything else that can be caught by the machine.}
+\prohib{100}{Wearing gloves is forbidden}{Especially strong leather ones. They get caught easily and then `help' ripping body parts off. 
+}}
+{
+\textbf{Beware that this is a powerful, 3-phase (Krachtstroom), machine.}
+
+So unlike the other pillar-drill - it won't stop of something jams.
+
+Beware that the machine can start to spin if you press the green button while the rotary knob is set to 1 or 2. 
+
+Only use the emergency button on the front for emergency stops. For routine on-off use the rotary knob. De-energise the machine with the red button when you are done.
+
+Noise wise -- be considerate to our neighbours -- especially in the evenings.
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%: Drill & Mill
+\machinePage{Drill \& Mill}{NoMandatory}{
+\textbf{Drilling}: Use with common sense, do not drill in the metal of the XY table! Use the wooden overlay to protect it. 
+
+\textbf{Milling}: Getting instructions \textbf{prior} to use is mandatory. After milling: put the machine back in order for drilling, so others can use it
+
+\textbf{When changing the drillbit for milling: use a nylon hamerhead, do NOT use a metal hamer.  }
+}{
+\prohib{100}{Do not wear gloves}{Especially strong leather ones. They get caught easily and then `help' ripping body parts off. 
+
+Very thin (latex) gloves that easily tear are ok.}
+\action{52}{Eye protection recommended}{Especially when milling. Swarf will fly. Cutters can come loose. Broken cutters can fly very far and are razor sharp.}
+\action{58}{Wear protective clothing}{Wear tight fitting clothing, keep long hair tied up, no jewellery or anything else that can be caught by the machine.}
+\warn{128}{Sharp rotating elements}{This machine is essentially a cutter without any guard whatsoever.}
+\warn{117}{Slippery surface}{Floor will get very slippery; especially when using coolant.}
+}{
+To adjust the height: 1) loosen the lower nut at the right back side of the machine (marked: 'deze moer' ). Then 2) use the big handle on the left side to crank up/lower the whole top part of the drill. \\
+\textbf{And 3) fasten the nut again before drilling!}
+
+For speed adjustment open the top and re-arrange the belts as shown on the diagram on the machine for the right speed. You can run these off/on the wheels by starting and ending with the larger of the two.
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%: Metal Sander
+\machinePage{Metal Sander}{}{
+This machine is for metal sanding - both ferrous and non-ferrous metals are allowed (until further notice).
+
+\textbf{Connect a shopvac/vacuum cleaner to keep the dust under control.}
+
+}{
+\action{58}{Wear protective clothing}{Wear tight fitting clothing, keep long hair tied up, no jewellery or anything else that can be caught by the machine.}
+\action{51}{Ear protection recommended}{Note also that this machine should not be used after 19:00 -- it is that noisy!}
+\action{52}{Eye protection recommended}{}
+\action{64}{Wear a mask when needed}{And keep the dust under control by connecting the vacuum cleaner or a shop vac. The grit is both unhealthy \& damaging to other equipment.}
+\warn{128}{High speed abrasive surfaces}{So keep your fingers away.  
+
+It takes metal away awfully fast.}{}
+}
+{Consult the WIKI (or ask) when you need to change the sanding belt. Report this on the mailing list.
+
+Try to leave the machine in at least as clean a state as you found it. Likewise, if you `gum up' the sanding belt (easy with for example soft aluminium) -- do feel encouraged to replace it or at least warn the next user via the mailing list.
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%:   Drill press
+\machinePage{Oscillating Band/Bobbin Sander}{NoMandatory}{
+This machine is for WOOD only.
+
+Make sure that the bobbin/band is fixed in position and cannot slip. 
+
+Let the sander do its work - do not apply much pressure (things will burn, you'll ruin the mechanics).
+}{
+\action{49}{Dust extraction mandatory}{Use the dust extractor. Always.}
+\action{64}{Wear a mask when needed}{Depending on the wood being sanded.}
+\action{52}{Eye protection recommended}{}
+\action{58}{Wear protective clothing}{Wear tight fitting clothing, keep long hair tied up, no jewellery or anything else that can be caught by the machine.}
+}{
+Noise wise -- be considerate to our neighbours -- especially in the evenings.
+}
+
+
+%%%%%
+% Main Room
+%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%: CNC Vinyl snijder
+\machinePage{CNC Vinyl cutter}{}{
+}{
+\warn{128}{Sharp rotating elements}{}
+\warn{124}{Machine can suddenly start}{Also during power-up.}
+}{
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%: Ultrasonic Cleaner
+\machinePage{Ultrasonic cleaner}{NoMandatory}{
+Contains cleaning solvent (10\% dilution) -- keep off skin and out of your eyes.
+
+When using aggressive solvents - use small jars within the normal cleaning fluid. To avoid damaging or corroding the tank/metal.
+}{
+\action{57}{Wear protective gloves}{}
+\action{52}{Eye protection recommended}{Especially when using aggressive solvents}
+\action{58}{Protective clothing recommended}{E.g. to protect your bare arms, etc.}
+\warn{49}{Irritant, Corrosive}{Water contains cleaning solvent}
+\warn{49}{Hot}{Water will be hot}
+}{
+Noise wise -- be considerate to our neighbours -- especially in the evenings.
+
+
+Do not run unattended.  Stay at the space when it is in use or when it is still hot.
+}
+
+
+%%%%%
+%Electronics Area
+%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%:  Reflow oven
+\machinePage{PCB Reflow Oven}{}{
+}{
+}{
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%:  Hot plate
+\machinePage{T-Shirt hotplate}{}{
+}{
+\warn{123}{Hot surfaces}{The hotplate will become hot (obviously).}
+}{
+}
+
+
+
+
+
+
+
+
+
+
+
+%%%%%
+% Not in Bristol Hackspace (yet)
+%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%:  Welding kit and gas
+%\machinePage{Welding equipment}{Log}{
+%Gas cylinders must be kept mounted in their stand with a \textbf{safety strap} at all times.
+
+%There should never be more than a total125L of `water equivalent' volume, aggregated across all bottles (full or empty) at the space.
+%}{
+%\action{67}{Wear a welding mask}{}
+%\action{57}{Wear protective gloves}{}
+%\warn{128}{Pressurised Cylinders}{}
+%\action{74}{Use protective apron}{}
+%}{
+%Do not forget to close the valves on the gas bottles post use.
+
+%If you have empty bottles; be sure to get them refilled or remove them from the space. 
+
+%There should \textbf{never be more than a 125 litres} of `water equivalent' volume present at the space (aggregated across all cylinders, \textbf{empty or full}, pressured or unpressured).
+
+%This is because the space does \textbf{not have the required permits} for crossing the \textbf{125L limit}.
+%}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%:   Pottery oven
+%\machinePage{Pottery Oven}{Mandatory}{
+%This oven is for pottery, ceramics, annealing and similar use. Up to 1200\degree C.
+
+%Please write down the electricity use (kWh counter) and pay \euro{0.25} to the foundation (NL30 TRIO 0197 6945 19).
+%}{
+%\prohib{75}{No mid-bake opening}{This oven is not designed to be opened while hot. Or to have contents removed (or added) while hot.}
+%\prohib{75}{No fumes}{This oven has no exhaust. So no metal melting or similar.}
+%\warn{118}{Bare electric wires inside}{Do not open the oven while powered on. The heating spirals are not isolated.}
+%}{
+%Stay with the machine while it is powered.
+%}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%: Blacksmithing Oven
+%\machinePage{Blacksmithing Oven}{Mandatory, Two}{
+
+%When using - make sure the that you have ready access to the main shut-off valve (i.e. so you do not have to reach over something hot) and that the tubing is well out of harms way.
+
+%Keep track of your gas use \& report this.
+%}{
+%\warn{49}{Hot}{Oven will be hot}
+%\action{57}{Wear protective gloves}{}
+%\action{52}{Eye protection recommended}{}
+%\action{58}{Protective clothing recommended}{}
+%\action{49}{No abrasive work or grinding allowed while the oven is in operation.}{}
+%}{
+%Noise wise -- be considerate to our neighbours -- especially in the evenings.
+
+%Do not run unattended.  Stay at the space when it is in use or when it is still hot. If it is still hot when you leave; make sure this is clearly signposted.
+%}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%: Jung Surface Grinder
+%\machinePage{Jung Surface Grinder}{Induction}{
+%Be very gentle with the Z-axis; do not plunge or ram it into the surface.
+
+%If you notice any imbalance - stop immediately. Disk or machine can quickly destroy themselves.
+%}{
+%\prohib{75}{Carbide Aluminium Forbidden}{It is forbidden to grind Aluminium. Just don't. No carbide either}
+%\action{52}{Eye protection mandatory}{Sparks will fly, the grinding disk can shatter}
+%\action{58}{Wear protective clothing}{Wear tight fitting clothing, keep long hair tied up, no jewellery or anything else that can be caught by the machine.}
+%% \prohib{100}{Do not wear gloves}{Especially strong leather ones. They get caught easily and then `help' ripping body parts off.}
+%\warn{125}{Crushing}{Risk of crushing -- the machine does not have any sensors that detect obstacles.}
+%\warn{124}{Grinding wheel runs `invisibly}{%
+%The grinding wheel will run very smooth, barely visible - and will continue to be dangerous for a minute or so after shutoff
+%}
+%\warn{117}{Slippery surface}{Floor will get very slippery; especially when using coolant.}
+%\action{64}{Wear a mask when needed}{And be very careful with truly nasty material. Grinding carbide is not allowed.}
+%\warn{108}{Explosion risk}{Aluminium Forbidden: Explosion risk in general; and especially in combination with rust/water based coolant}
+%}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%: 12 ton press
+%\machinePage{Hydraulic Press}{}{
+%}{
+%\action{52}{Eye protection needed}{}}{
+%}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Zandstraalcabine
+%\machinePage{Sanding Cabinet}{}{
+%Do not spray at your hands/fingers. The gloves \textbf{will} ultimately give way and they are not cheap.
+%}{
+%}{
+%Do switch off the compressor after use.
+%}
