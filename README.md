@@ -1,4 +1,5 @@
-Safetysheets for the Makerspace Leiden (http://makerspaceleiden.nl/).
+Safetysheets from the Makerspace Leiden (http://makerspaceleiden.nl/).
+Now adapted for Bristol Hackspace.
 
 Required:
 	LaTeX (e.g. TexShop, etc).
