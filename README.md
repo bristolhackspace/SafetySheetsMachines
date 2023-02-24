@@ -46,3 +46,8 @@ Principle
 		horizontal position of the image.
 
 Changing things
+
+
+LaTeX notes:
+LaTeX has special characters: # $ % & \ ^ _ { } ~. Most of them can be escaped prepending a simple backslash, but \, ^ and ~ need special escapes.
+Pasting URLs in to LaTeX will likely require modifications before it will compile properly.
