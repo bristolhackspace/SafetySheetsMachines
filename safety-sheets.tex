@@ -4,6 +4,8 @@
 \include{base}
 
 \begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %: Intro sheet to the hackspace
 \machinePage{Bristol Hackspace}{NoMandatory}{
 Observe all safety instructions. Induction or Instructions are required for some of the machines. Ask someone for help, consult the wiki or message the forum when in doubt.
@@ -24,34 +26,12 @@ Make sure you know where the \textbf{emergency stops and fire extinguishers} are
 }{If something breaks or is amiss -- it is \textbf{your} responsibility to report it.  If you find something broken -- report it before using/repairing the machine.
 }
 
-% Some of the possible Actions, Warnings, and Prohibs for machine pages. for more, look in the ISO pdf file and extract the page number.
-%\action{49}{General mandatory action sign}{}
-%\action{50}{Refer to instruction manual/booklet}{}
-%\action{51}{Wear ear protection}{}
-%\action{52}{Wear eye protection}{}
-%\action{55}{Opaque eye protection must be worn}{}
-%\action{56}{Wear safety footwear}{}
-%\action{57}{Wear protective gloves}{}
-%\action{58}{Wear protective clothing}{}
-%\action{64}{Wear a mask}{}
-%\action{67}{Wear a welding mask}{}
-%\action{74}{Use protective apron}{}
-%\prohib{75}{General prohibition sign}{}
-%\warn{38}{General warning sign}{}
-%\warn{107}{General warning sign}{}
-% \warn{110}{Laser beam}{Keep the lid closed at all times. If you bypass the safety interlocks--then you are an ass.}
-%\prohib{100}{Do not wear gloves}{}
-%\warn{117}{Slippery surface}{}
-%\warn{124}{Automatic start-up}
-%\warn{125}{Crushing}{}
-%\warn{128}{Sharp element}{}
-%\warn{130}{Crushing of hands}{}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %: Template
 \machinePage{Template} %title of machine.
 	{NoMandatory, Log, Dust, Online, InPerson}%safety options: Induction, blank (instruction mandatory), NoMandatory
 		% Additionally, options include: Online, InPerson, Log, Dust
-	{further text on mandatory safety rules}
+	{} %further text on mandatory safety rules, appears at top of page with Log warning, Dust warning, Induction, etc.
 	{%Main warnings, alerts, etc.
 %	\action{49}{General mandatory action sign}{} %Exclamation mark.
 %	\action{50}{Refer to instruction manual/booklet}{} %Person reading book.
@@ -77,52 +57,99 @@ Make sure you know where the \textbf{emergency stops and fire extinguishers} are
 %	\warn{127}{flammable material}{} %flame warning trianble.
 %	\warn{128}{Sharp element}{} %bandaged hand above sharp point.
 %	\warn{130}{Crushing of hands}{} %hands getting crushed.
-% Other symbols are available in the ISO PDF in the github.
+% Other symbols are available in the ISO PDF in the github. Extract the actual pagenumber. 
 	}
 	{%Final footer warning
 	
 	}
 
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %: Wood Workshop
-\machinePage{Wood Workshop}{NoMandatory}{
+\machinePage{Wood Workshop} %title of machine.
+	{NoMandatory}%safety options: Induction, blank (instruction mandatory), NoMandatory
+		% Additionally, options include: Online, InPerson, Log, Dust
+	{
 The wood shop is separated from the rest of the space for dust- and clean-tool control reasons.  
 
 \textbf{Keep wood-tools separate from other tools and free of (machining) oil.}
 
-\textbf{Connect a shopvac/vacuum cleaner to keep the dust under control.}
-}{
-\action{49}{Keep this door closed}{To keep the dust under control}
-\action{49}{Keep wood-tools separate}{Try to keep wood- and metal-tools separate; the latter are often oily and can spoil others people work for a long time aftwards}
-\action{58}{Wear protective clothing}{Wear tight fitting clothing, keep long hair tied up, no jewellery or anything else that can be caught by the machine.}
-\action{51}{Ear protection recommended}{}
-\action{52}{Eye protection recommended}{}
-\action{64}{Wear a mask when needed}{Use the dust extractors and keep this door closed}
-}{
-\textbf{Try to leave the woodshop in a better state than you found it.}
-}
+\textbf{Connect a shopvac/vacuum cleaner to keep the dust under control.}%further text on mandatory safety rules, appears at top of page with Log warning, Dust warning, Induction, etc.
+	{%Main warnings, alerts, etc.
+	\action{49}{Keep the door to the main room closed}{To keep the dust under control} %Exclamation mark.
+	\action{49}{Keep wood-tools separate}{Try to keep wood- and metal-tools separate; the latter are often oily and can spoil others people work for a long time aftwards} %Exclamation mark.
 
-
+%	\action{50}{Refer to instruction manual/booklet}{} %Person reading book.
+	\action{51}{Ear protection recommended}{} %Person wearing ear defenders.
+	\action{52}{Eye protection recommended}{} %Person wearing safety glasses.
+%	\action{55}{Opaque eye protection must be worn}{} %Person wearing opaque safety glasses.
+%	\action{56}{Wear safety footwear}{} %Safety boots.
+%	\action{57}{Wear protective gloves}{} %Gloves.
+	\action{58}{Wear protective clothing}{Wear tight fitting clothing, keep long hair tied up, no jewellery or anything else that can be caught by the machine.} %symbol of overalls.
+%	\action{61}{Wear a face shield}{} %head wearing a face shield.
+	\action{64}{Wear a mask when needed}{Make appropriate use of dust extraction.} %head wearing a covid style mask.
+%	\action{67}{Wear a welding mask}{} %head wearing a welding mask.
+%	\action{74}{Use protective apron}{} %person wearing an apron.
+%	\prohib{75}{General prohibition sign}{} %general prohibition sign with nothing in it.
+%	\prohib{77}{no open flames}{} %lit match prohibition sign.
+%	\prohib{88}{No reaching in}{} %hand between two converging lines.
+%	\prohib{100}{Do not wear gloves}{} %gloves prohibition sign.
+%	\warn{107}{General warning sign}{} %Exclamation mark in warning triangle.
+%	\warn{110}{Laser beam}{} %Laser beam warning triangle.
+%	\warn{117}{Slippery surface}{} %Human figure falling backwards warning triangle.
+%	\warn{123}{Hot Surface}{} %hot surface warning triangle.
+%	\warn{124}{Automatic start-up}{} %spinny thing go fast warning triangle.
+%	\warn{127}{flammable material}{} %flame warning trianble.
+%	\warn{128}{Sharp element}{} %bandaged hand above sharp point.
+%	\warn{130}{Crushing of hands}{} %hands getting crushed.
+% Other symbols are available in the ISO PDF in the github. Extract the actual pagenumber. 
+	}
+	{%Final footer warning
+	\textbf{Try to leave the woodshop in a better state than you found it.}	
+	}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %: Pillar Drill
-\machinePage{Pillar Drill}{nomandatory}{
-Do not attempt to change the drill speed, as the gearing is non-standard.
+\machinePage{Pillar Drill} %title of machine.
+	{NoMandatory}%safety options: Induction, blank (instruction mandatory), NoMandatory
+		% Additionally, options include: Online, InPerson, Log, Dust
+	{Do not attempt to change the drill speed, as the gearing is non-standard.
 Make sure you clamp your workpiece well - to avoid spinning.
 Be aware of other people around you. Don't bump into them and be respectful of usage space around the equipment.
 Only drill vertically. This is not a mill / CNC machine. Things could go very wrong if the work piece is moved while drilling into it.
+} %further text on mandatory safety rules, appears at top of page with Log warning, Dust warning, Induction, etc.
+	{%Main warnings, alerts, etc.
+%	\action{49}{General mandatory action sign}{} %Exclamation mark.
+%	\action{50}{Refer to instruction manual/booklet}{} %Person reading book.
+%	\action{51}{Wear ear protection}{} %Person wearing ear defenders.
+	\action{52}{Eye protection recommended}{Swarf will fly. Marterial can come loose.} %Person wearing safety glasses.
+%	\action{55}{Opaque eye protection must be worn}{} %Person wearing opaque safety glasses.
+%	\action{56}{Wear safety footwear}{} %Safety boots.
+%	\action{57}{Wear protective gloves}{} %Gloves.
+	\action{58}{Wear protective clothing}{Wear tight fitting clothing, keep long hair tied up, no jewellery or anything else that can be caught by the machine.} %symbol of overalls.
+%	\action{61}{Wear a face shield}{} %head wearing a face shield.
+	\action{64}{Respiratory protection is recommended}{} %head wearing a covid style mask.
+%	\action{67}{Wear a welding mask}{} %head wearing a welding mask.
+%	\action{74}{Use protective apron}{} %person wearing an apron.
+%	\prohib{75}{General prohibition sign}{} %general prohibition sign with nothing in it.
+%	\prohib{77}{no open flames}{} %lit match prohibition sign.
+%	\prohib{88}{No reaching in}{} %hand between two converging lines.
+	\prohib{100}{Do not wear gloves}{Especially strong leather ones. They get caught easily and then `help' ripping body parts off.} %gloves prohibition sign.
+%	\warn{107}{General warning sign}{} %Exclamation mark in warning triangle.
+%	\warn{110}{Laser beam}{} %Laser beam warning triangle.
+%	\warn{117}{Slippery surface}{} %Human figure falling backwards warning triangle.
+%	\warn{123}{Hot Surface}{} %hot surface warning triangle.
+%	\warn{124}{Automatic start-up}{} %spinny thing go fast warning triangle.
+%	\warn{127}{flammable material}{} %flame warning trianble.
+%	\warn{128}{Sharp element}{} %bandaged hand above sharp point.
+	\warn{130}{Crushing}{Risk of crushing -- the machine does not have any sensors that detect obstacles. The drill is operated by gears. They will not slip or stop.} %hands getting crushed.
+% Other symbols are available in the ISO PDF in the github. Extract the actual pagenumber. 
+	}
+	{%Final footer warning
+	https://wiki.bristolhackspace.org/equipment/woodshop/floor-standing-pillar-drill
+	
+	}
 
-}{
-\prohib{100}{Do not wear gloves}{Especially strong leather ones. They get caught easily and then `help' ripping body parts off.}
-\action{52}{Eye protection recommended}{Swarf will fly. Marterial can come loose.}
-\action{58}{Wear protective clothing}{Wear tight fitting clothing, keep long hair tied up, no jewellery or anything else that can be caught by the machine.}
-\action{64}{Respiratory protection is recommended}{}	
-\warn{130}{Crushing}{Risk of crushing -- the machine does not have any sensors that detect obstacles. The drill is operated by gears. They will not slip or stop.
-This includes things such as your hands or tools you've left on the workspace.}
 
-}
-{https://wiki.bristolhackspace.org/equipment/woodshop/floor-standing-pillar-drill}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
