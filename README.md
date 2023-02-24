@@ -18,9 +18,10 @@ Principle
 		\machinepage{Name}{additional tokens}{specific instructions}{warning symbols}{footer information}
 	
 	Each warning symbol command takes 3 pairs of curly braces. These three commands exist because extracting the images from the Italian ISO document needs three different "offsets" within the pages in the ISO document  
-		\warn{iso page number}{title}{subtitle}  
-		\alert{iso page number}{title}{subtitle}  
-		\prohib{iso page number}{title}{subtitle}  
+		\warn{iso page number}{title}{subtitle}  %Page 49 to 74
+		\alert{iso page number}{title}{subtitle}  %Page 75 to 106
+		\prohib{iso page number}{title}{subtitle}  %Page 107 to 135
+		There is no command for the green safety symbols (yet).
 		
 	Certain symbols act as commands in LaTeX and need to be escaped, such as & should be written with \&.
 
