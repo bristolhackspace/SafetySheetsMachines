@@ -1,6 +1,10 @@
-Safetysheets from the Makerspace Leiden (http://makerspaceleiden.nl/).
-Now adapted for Bristol Hackspace.
+Safetysheets from the Makerspace Leiden (http://makerspaceleiden.nl/).  
+Now adapted for Bristol Hackspace (https://bristolhackspace.org/).
 
+### Compiling 
+Option A: use GitHub Actions to compile the LaTeX online.
+
+Option B: download and run the repository locally.
 Required:
 	LaTeX (e.g. TexShop, etc).
 	PDF reader.
@@ -8,11 +12,11 @@ Required:
 Optional:
 	(pip install) pywikibot for the image uploader to the wiki
 
-Principle
+### Principle
 
 1) safety-sheets.tex
 
-	one entry for each machine called a MachinePage.
+	Contains one entry for each machine called a MachinePage.
 	
 	Each MachinePage command needs 5 pairs of curly braces
 	
@@ -23,12 +27,10 @@ Principle
 		\alert{iso page number}{title}{subtitle}  %Page 75 to 106
 		\prohib{iso page number}{title}{subtitle}  %Page 107 to 135
 		There is no command for the green safety symbols (yet).
-		
-	Certain symbols act as commands in LaTeX and need to be escaped, such as & should be written with \&.
 
 2) base.tex
 	
-	macro's or `commands' that build the pages.
+	macro's or `functions' that build the pages.
 
 	machinePage - a page about a machine - see file for arguments.
 		
@@ -42,10 +44,11 @@ Principle
 
 	decal -- thing that actually extracts the images from the
 		document. Has some funnyness as the gutter on the
-		left and right page is difference; and hence the
+		left and right page is different; and hence the
 		horizontal position of the image.
 
-Changing things
+### Changing things
+When compiling (in a LaTeX desktop app or using GitHub Actions, LaTeX can sometimes fail. This is generally due to a syntax error, and all applications should give you access to the errors. You can use these to pinpoint where the issue is and what it might be, although fixes sometimes take trial and error. Ask Google or the forum for assistance.
 
 
 LaTeX notes:
