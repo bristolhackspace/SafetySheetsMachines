@@ -25,29 +25,45 @@ Make sure you know where the \textbf{emergency stops and fire extinguishers} are
 }
 
 % Some of the possible Actions, Warnings, and Prohibs for machine pages. for more, look in the ISO pdf file and extract the page number.
-%\action{49}{General mandatory action sign}{}
-%\action{50}{Refer to instruction manual/booklet}{}
-%\action{51}{Wear ear protection}{}
-%\action{52}{Wear eye protection}{}
-%\action{55}{Opaque eye protection must be worn}{}
-%\action{56}{Wear safety footwear}{}
-%\action{57}{Wear protective gloves}{}
-%\action{58}{Wear protective clothing}{}
-%\action{64}{Wear a mask}{}
-%\action{67}{Wear a welding mask}{}
-%\action{74}{Use protective apron}{}
-%\prohib{75}{General prohibition sign}{}
-%\warn{38}{General warning sign}{}
-%\warn{107}{General warning sign}{}
-% \warn{110}{Laser beam}{Keep the lid closed at all times. If you bypass the safety interlocks--then you are an ass.}
-%\prohib{100}{Do not wear gloves}{}
-%\warn{117}{Slippery surface}{}
-%\warn{124}{Automatic start-up}
-%\warn{125}{Crushing}{}
-%\warn{128}{Sharp element}{}
-%\warn{130}{Crushing of hands}{}
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Some of the possible Actions, Warnings, and Prohibs for machine pages. for more, look in the ISO pdf file and extract the page number.
+%: Template
+\machinePage{Template} %title of machine.
+	{NoMandatory, Log, Dust, Online, InPerson}%safety options: Induction, blank (instruction mandatory), NoMandatory
+		% Additionally, options include: Online, InPerson, Log, Dust
+	{} %further text on mandatory safety rules, appears at top of page with Log warning, Dust warning, Induction, etc.
+	{%Main warnings, alerts, etc.
+%	\action{49}{General mandatory action sign}{} %Exclamation mark.
+%	\action{50}{Refer to instruction manual/booklet}{} %Person reading book.
+%	\action{51}{Wear ear protection}{} %Person wearing ear defenders.
+%	\action{52}{Wear eye protection}{} %Person wearing safety glasses.
+%	\action{55}{Opaque eye protection must be worn}{} %Person wearing opaque safety glasses.
+%	\action{56}{Wear safety footwear}{} %Safety boots.
+%	\action{57}{Wear protective gloves}{} %Gloves.
+%	\action{58}{Wear protective clothing}{Wear tight fitting clothing, keep long hair tied up, no jewellery or anything else that can be caught by the machine.} %symbol of overalls.
+%	\action{61}{Wear a face shield}{} %head wearing a face shield.
+%	\action{64}{Wear a mask}{} %head wearing a covid style mask.
+%	\action{67}{Wear a welding mask}{} %head wearing a welding mask.
+%	\action{74}{Use protective apron}{} %person wearing an apron.
+%	\prohib{75}{General prohibition sign}{} %general prohibition sign with nothing in it.
+%	\prohib{77}{no open flames}{} %lit match prohibition sign.
+%	\prohib{88}{No reaching in}{} %hand between two converging lines.
+%	\prohib{100}{Do not wear gloves}{} %gloves prohibition sign.
+%	\warn{107}{General warning sign}{} %Exclamation mark in warning triangle.
+%	\warn{110}{Laser beam}{Keep the lid closed at all times. If you bypass the safety interlocks--then you are an ass.} %Laser beam warning triangle.
+%	\warn{117}{Slippery surface}{} %Human figure falling backwards warning triangle.
+%	\warn{123}{Hot Surface}{} %hot surface warning triangle.
+%	\warn{124}{Automatic start-up}{} %spinny thing go fast warning triangle.
+%	\warn{127}{flammable material}{} %flame warning trianble.
+%	\warn{128}{Sharp element}{} %bandaged hand above sharp point.
+%	\warn{130}{Crushing of hands}{} %hands getting crushed.
+% Other symbols are available in the ISO PDF in the github. Extract the actual pagenumber. 
+	}
+	{%Final footer warning
+	
+	}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %: Arboga G2508 Pillar Drill
