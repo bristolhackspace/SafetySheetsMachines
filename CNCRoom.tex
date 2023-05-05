@@ -3,6 +3,60 @@
 %%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%: CNC Room
+\machinePage{CNC Room} %title of machine.
+	{NoMandatory, InPerson}%safety options: Induction, blank (instruction mandatory), NoMandatory
+		% Additionally, options include: Online, InPerson, Log, Dust
+	{All of the machines in this room (currently) require in person inductions.} %further text on mandatory safety rules, appears at top of page with Log warning, Dust warning, Induction, etc.
+	{%Main warnings, alerts, etc.
+%	\action{49}{General mandatory action sign}{} %Exclamation mark.
+%	\action{50}{Refer to instruction manual/booklet}{} %Person reading book.
+%	\action{51}{Wear ear protection}{} %Person wearing ear defenders.
+%	\action{52}{Wear eye protection}{} %Person wearing safety glasses.
+%	\action{55}{Opaque eye protection must be worn}{} %Person wearing opaque safety glasses.
+%	\action{56}{Wear safety footwear}{} %Safety boots.
+%	\action{57}{Wear protective gloves}{} %Gloves.
+%	\action{58}{Wear protective clothing}{Wear tight fitting clothing, keep long hair tied up, no jewellery or anything else that can be caught by the machine.} %symbol of overalls.
+%	\action{61}{Wear a face shield}{} %head wearing a face shield.
+%	\action{64}{Wear a mask}{} %head wearing a covid style mask.
+%	\action{67}{Wear a welding mask}{} %head wearing a welding mask.
+%	\action{74}{Use protective apron}{} %person wearing an apron.
+%	\prohib{75}{General prohibition sign}{} %general prohibition sign with nothing in it.
+%	\warn{77}{no open flames}{} %lit match prohibition sign.  This is a "Prohib" sign but needed a different offset, so we use the Warn command.
+%	\warn{88}{No reaching in}{} %hand between two converging lines. This is a "Prohib" sign but needed a different offset, so we use the Warn command.
+%	\prohib{100}{Do not wear gloves}{} %gloves prohibition sign.
+%	\prohib{107}{General warning sign}{} %Exclamation mark in warning triangle. This is an "alert/Warn" sign but needed a different offset, so we use the warn command.
+%	\warn{110}{Laser beam}{} %Laser beam warning triangle.
+%	\warn{117}{Slippery surface}{} %Human figure falling backwards warning triangle.
+%	\warn{123}{Hot Surface}{} %hot surface warning triangle.
+%	\warn{124}{Automatic start-up}{} %spinny thing go fast warning triangle.
+%	\warn{127}{flammable material}{} %flame warning trianble.
+%	\warn{128}{Sharp element}{} %bandaged hand above sharp point.
+%	\warn{130}{Crushing of hands}{} %hands getting crushed.
+% Other symbols are available in the ISO PDF in the github. Extract the actual pagenumber. 
+	}
+	{%Final footer warning
+	
+	}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%: Leaving the CNC room
+\machinePage{Leaving the CNC room?} %title of machine.
+	{}%safety options: Induction, blank (instruction mandatory), NoMandatory
+		% Additionally, options include: Online, InPerson, Log, Dust
+	{} %further text on mandatory safety rules, appears at top of page with Log warning, Dust warning, Induction, etc.
+	{%Main warnings, alerts, etc.
+	\action{49}{Ensure the CNC Laser is off and the PC locked.}{Take your skeletons with you.} %Exclamation mark.
+	\action{49}{Ensure the 3D printers are locked out if not in use.}{} %Exclamation mark.
+	\action{49}{If you're leaving a print unattended - post on the Discourse long prints chat!}{} %Exclamation mark.
+
+% Other symbols are available in the ISO PDF in the github. Extract the actual pagenumber. 
+	}
+	{%Final footer warning
+	If the bin is full - empty it. Spare bags are in the consumables cabinet, and the bin is outside > right > right.	
+	}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %: CNC Mill
 \machinePage{CNC Mill} %title of machine.
 	{InPerson}%safety options: Induction, blank (instruction mandatory), NoMandatory
@@ -40,28 +94,10 @@
   
 	}
 
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %: PCB Mill
-\machinePage{PCB Mill}{Induction}{
-}{
-\prohib{100}{Do not wear gloves}{Especially strong leather ones. They get caught easily and then `help' ripping body parts off.}
-\action{52}{Eye protection recommended}{Swarf will fly. Cutters can come loose. Broken cutters can fly very far and are razor sharp.}
-\action{58}{Wear protective clothing}{Wear tight fitting clothing, keep long hair tied up, no jewellery or anything else that can be caught by the machine.}
-\warn{125}{Crushing}{Risk of crushing -- the machine does not have any sensors that detect obstacles.
-
-Note that it can also run very slow; barely noticeable.}
-\warn{117}{Slippery surface}{Floor will get very slippery; especially when using coolant.}
-\warn{128}{Sharp rotating elements}{This machine is essentially a cutter without any guard whatsoever.}
-}{
-Only switch XYZ feeds when the machine is not running. Use the hand-wheel to get the gear fully locked in prior to starting the feed. Be sure to tighten all 4 nuts post rotating the head or all 4 nuts when moving the head laterally.
-
-Try to avoid getting coolant or similar on the slide-ways -- especially the Y slipway between machine and table. Use a shield or adjust the flow. Machine needs to be cleaned post use.  When using coolant -- also empty the recess on the left of the table and clean out the t-Slots until dry.
-}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%: Template
-\machinePage{Template} %title of machine.
-	{NoMandatory, Log, Dust, Online, InPerson}%safety options: Induction, blank (instruction mandatory), NoMandatory
+\machinePage{PCB Mill} %title of machine.
+	{InPerson}%safety options: Induction, blank (instruction mandatory), NoMandatory
 		% Additionally, options include: Online, InPerson, Log, Dust
 	{} %further text on mandatory safety rules, appears at top of page with Log warning, Dust warning, Induction, etc.
 	{%Main warnings, alerts, etc.
