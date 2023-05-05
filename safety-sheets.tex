@@ -95,7 +95,7 @@ The wood shop is separated from the rest of the space for dust- and clean-tool c
 %	\prohib{100}{Do not wear gloves}{} %gloves prohibition sign.
 %	\prohib{107}{General warning sign}{} %Exclamation mark in warning triangle. This is an "alert/Warn" sign but needed a different offset, so we use the warn command.
 %	\warn{110}{Laser beam}{} %Laser beam warning triangle.
-%	\warn{117}{Slippery surface}{} %Human figure falling backwards warning triangle.
+	\warn{117}{Slippery surface}{The wood room floor can get slippery if covered in wood - so keep it tidy!} %Human figure falling backwards warning triangle.
 %	\warn{123}{Hot Surface}{} %hot surface warning triangle.
 %	\warn{124}{Automatic start-up}{} %spinny thing go fast warning triangle.
 %	\warn{127}{flammable material}{} %flame warning trianble.
@@ -106,7 +106,23 @@ The wood shop is separated from the rest of the space for dust- and clean-tool c
 	{%Final footer warning
 	\textbf{Try to leave the woodshop in a better state than you found it.}	
 	}
-
+	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%: Leaving the Wood Shop
+\machinePage{Leaving the Wood Room?} %title of machine.
+	{}%safety options: Induction, blank (instruction mandatory), NoMandatory
+		% Additionally, options include: Online, InPerson, Log, Dust
+	{Tidy up!} %further text on mandatory safety rules, appears at top of page with Log warning, Dust warning, Induction, etc.
+	{%Main warnings, alerts, etc.
+	\action{49}{Put everything back where it should be!}{} %Exclamation mark.
+	\action{49}{Take your wood waste with you!}{} %Exclamation mark.
+	\action{49}{Leave it cleaner than you found it!}{Use the dust cart, it has a nice long cable :).} %Exclamation mark.
+%	\warn{117}{Slippery surface}{} %Human figure falling backwards warning triangle.
+%	\warn{127}{flammable material}{} %flame warning trianble.
+	}
+	{%Final footer warning
+	
+	}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %: Pillar Drill
 \machinePage{Pillar Drill} %title of machine.
