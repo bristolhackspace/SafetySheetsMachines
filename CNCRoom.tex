@@ -101,7 +101,7 @@
 		% Additionally, options include: Online, InPerson, Log, Dust
 	{} %further text on mandatory safety rules, appears at top of page with Log warning, Dust warning, Induction, etc.
 	{%Main warnings, alerts, etc.
-%	\action{49}{General mandatory action sign}{} %Exclamation mark.
+	\action{49}{PCB must be securely fixed down.}{} %Exclamation mark.
 %	\action{50}{Refer to instruction manual/booklet}{} %Person reading book.
 %	\action{51}{Wear ear protection}{} %Person wearing ear defenders.
 %	\action{52}{Wear eye protection}{} %Person wearing safety glasses.
@@ -113,7 +113,7 @@
 %	\action{64}{Wear a mask}{} %head wearing a covid style mask.
 %	\action{67}{Wear a welding mask}{} %head wearing a welding mask.
 %	\action{74}{Use protective apron}{} %person wearing an apron.
-%	\prohib{75}{General prohibition sign}{} %general prohibition sign with nothing in it.
+	\prohib{75}{Do not operate the spindle with the door open.}{} %general prohibition sign with nothing in it.
 %	\warn{77}{no open flames}{} %lit match prohibition sign. This is a "Prohib" sign but needed a different offset, so we use the Warn command.
 %	\warn{88}{No reaching in}{} %hand between two converging lines. This is a "Prohib" sign but needed a different offset, so we use the Warn command.
 %	\prohib{100}{Do not wear gloves}{} %gloves prohibition sign.
@@ -121,9 +121,9 @@
 %	\warn{110}{Laser beam}{} %Laser beam warning triangle.
 %	\warn{117}{Slippery surface}{} %Human figure falling backwards warning triangle.
 %	\warn{123}{Hot Surface}{} %hot surface warning triangle.
-%	\warn{124}{Automatic start-up}{} %spinny thing go fast warning triangle.
+	\warn{124}{Keep hands away from moving parts during use.}{} %spinny thing go fast warning triangle.
 %	\warn{127}{flammable material}{} %flame warning trianble.
-%	\warn{128}{Sharp element}{} %bandaged hand above sharp point.
+	\warn{128}{Sharp element}{avoid touching the sharp bits when changing tools.} %bandaged hand above sharp point.
 %	\warn{130}{Crushing of hands}{} %hands getting crushed.
 % Other symbols are available in the ISO PDF in the github. Extract the actual pagenumber. 
 	}
@@ -136,7 +136,7 @@
 \machinePage{Laser Cutter} %title of machine.
 	{InPerson}%safety options: Induction, blank (instruction mandatory), NoMandatory
 		% Additionally, options include: Online, InPerson, Log, Dust
-	{} %further text on mandatory safety rules, appears at top of page with Log warning, Dust warning, Induction, etc.
+	{Do not leave the room while in use.} %further text on mandatory safety rules, appears at top of page with Log warning, Dust warning, Induction, etc.
 	{%Main warnings, alerts, etc.
 	\action{49}{Do not use unless coolant temperature is below 24c}{Wait for coolant to drop below 24c before turning off.} %Exclamation mark.
 %	\action{50}{Refer to instruction manual/booklet}{} %Person reading book.
@@ -174,10 +174,15 @@
 \machinePage{3D Printers} %title of machine.
 	{InPerson}%safety options: Induction, blank (instruction mandatory), NoMandatory
 		% Additionally, options include: Online, InPerson, Log, Dust
-	{If you start a print and need to leave, you MUST post on the forum. There is a chat group set up for this.} %further text on mandatory safety rules, appears at top of page with Log warning, Dust warning, Induction, etc.
+	{Try to remain in the hackspace during your print. If you start a print and need to leave, you MUST post on the forum. There is a chat group set up for this.
+ Before printing, check for obvious faults.
+ Before printing, check the print surface is clean and wipe with isopropyl alcohol. You may wish to use glue stick.
+ If you need to stop the print, use the printer Stop function, not the emergency stop.
+ } %further text on mandatory safety rules, appears at top of page with Log warning, Dust warning, Induction, etc.
 	{%Main warnings, alerts, etc.
 	\action{49}{Always flush with PLA after using with any other filament type.}{} %Exclamation mark.
 	\action{49}{Do Not exceed the extrusion temperature limit of 285c.}{} %Exclamation mark.
+ 	\action{49}{Wait until the printer has cooled to below 40c before turning off.}{Use this time to clean up waste plastic.} %Exclamation mark.
 %	\action{50}{Refer to instruction manual/booklet}{} %Person reading book.
 %	\action{51}{Wear ear protection}{} %Person wearing ear defenders.
 %	\action{52}{Wear eye protection}{} %Person wearing safety glasses.
@@ -190,6 +195,7 @@
 %	\action{67}{Wear a welding mask}{} %head wearing a welding mask.
 %	\action{74}{Use protective apron}{} %person wearing an apron.
 	\prohib{75}{Do not change printer settings.}{You can change print settings, but not printer.} %general prohibition sign with nothing in it.
+ 	\prohib{75}{Avoid using live-adjust Z function to change height more than 0.2mm.}{} %general prohibition sign with nothing in it.
 %	\warn{77}{no open flames}{} %lit match prohibition sign. This is a "Prohib" sign but needed a different offset, so we use the Warn command.
 %	\warn{88}{No reaching in}{} %hand between two converging lines. This is a "Prohib" sign but needed a different offset, so we use the Warn command.
 %	\prohib{100}{Do not wear gloves}{} %gloves prohibition sign.
@@ -197,10 +203,10 @@
 %	\warn{110}{Laser beam}{} %Laser beam warning triangle.
 %	\warn{117}{Slippery surface}{} %Human figure falling backwards warning triangle.
 	\warn{123}{Hot Surface and very hot extruder head}{} %hot surface warning triangle.
-	\warn{124}{Automatic start-up}{Machine may suddenly start moving.} %spinny thing go fast warning triangle.
+%	\warn{124}{Automatic start-up}{Machine may suddenly start moving.} %spinny thing go fast warning triangle.
 %	\warn{127}{flammable material}{} %flame warning trianble.
 %	\warn{128}{Sharp element}{} %bandaged hand above sharp point.
-	\warn{130}{Crushing of hands}{} %hands getting crushed.
+	\warn{130}{Crushing of hands}{The machine does not know where your hands are. Be careful where you put them.} %hands getting crushed.
 % Other symbols are available in the ISO PDF in the github. Extract the actual pagenumber. 
 	}
 	{%Final footer warning
