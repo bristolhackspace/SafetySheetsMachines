@@ -136,9 +136,9 @@
 \machinePage{Laser Cutter} %title of machine.
 	{InPerson}%safety options: Induction, blank (instruction mandatory), NoMandatory
 		% Additionally, options include: Online, InPerson, Log, Dust
-	{Do not use unless coolant temperature is below 24c} %further text on mandatory safety rules, appears at top of page with Log warning, Dust warning, Induction, etc.
+	{} %further text on mandatory safety rules, appears at top of page with Log warning, Dust warning, Induction, etc.
 	{%Main warnings, alerts, etc.
-%	\action{49}{General mandatory action sign}{} %Exclamation mark.
+	\action{49}{Do not use unless coolant temperature is below 24c}{Wait for coolant to drop below 24c before turning off.} %Exclamation mark.
 %	\action{50}{Refer to instruction manual/booklet}{} %Person reading book.
 %	\action{51}{Wear ear protection}{} %Person wearing ear defenders.
 %	\action{52}{Wear eye protection}{} %Person wearing safety glasses.
@@ -150,23 +150,23 @@
 %	\action{64}{Wear a mask}{} %head wearing a covid style mask.
 %	\action{67}{Wear a welding mask}{} %head wearing a welding mask.
 %	\action{74}{Use protective apron}{} %person wearing an apron.
-%	\prohib{75}{General Warning}{} %general prohibition sign with nothing in it.
+	\prohib{75}{No water or wet/damp materials}{} %general prohibition sign with nothing in it.
 %	\warn{77}{no open flames}{} %lit match prohibition sign. This is a "Prohib" sign but needed a different offset, so we use the Warn command.
 %	\warn{88}{No reaching in}{} %hand between two converging lines. This is a "Prohib" sign but needed a different offset, so we use the Warn command.
 %	\prohib{100}{Do not wear gloves}{} %gloves prohibition sign.
 %	\warn{84}{Do not extinguish with water.}{Use the CO2 cylinder.}
 %	\prohib{107}{General warning sign}{} %Exclamation mark in warning triangle.  This is an "Alert" sign but needed a different offset, so we use the prohib command.
-	\warn{110}{Laser beam}{} %Laser beam warning triangle.
+	\warn{110}{Laser beam}{This should turn off if you open the door early. But don't be stupid with it!} %Laser beam warning triangle.
 %	\warn{117}{Slippery surface}{} %Human figure falling backwards warning triangle.
 %	\warn{123}{Hot Surface}{} %hot surface warning triangle.
 %	\warn{124}{Automatic start-up}{} %spinny thing go fast warning triangle.
-	\warn{127}{flammable material}{} %flame warning trianble.
+	\warn{127}{flammable material}{Everything that you're allowed to put in here is flammable. Be careful.} %flame warning trianble.
 %	\warn{128}{Sharp element}{} %bandaged hand above sharp point.
-	\warn{130}{Crushing of hands}{} %hands getting crushed.
+	\warn{130}{Crushing of hands}{The X,Y,Z axis do not have sensors, so they could crush your hands if you reach in while moving the gantry or table.} %hands getting crushed.
 % Other symbols are available in the ISO PDF in the github. Extract the actual pagenumber. 
 	}
 	{%Final footer warning
-	
+	Do \textit{not} add sharks to this laser cutter.
 	}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
