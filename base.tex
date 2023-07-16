@@ -119,38 +119,43 @@
 	\vspace{0cm}
 	{\fontsize{50}{60} \textbf{#1}}%Machine name
  
-	\action{49}{% Determines if you require approval / mandatory instructions / safety instructions
+	\action{49}{% Determines if you require Induction / the tool has mandatory instructions / or general safety instructions
 		\textbf{%
- 		\IfSubStr{#2}{Approval}%
-			{Instructions \& Approval Mandatory}
-			{\IfSubStr{#2}{NoMandatory}{Mandatory Safety Rules}{Instruction Mandatory}}%
+ 		\IfSubStr{#2}{Induction}%
+			{Induction is mandatory}
+			{\IfSubStr{#2}{NoMandatory}{Safety Rules}{These instructions are mandatory}}%
 		}}
 		{%
-		\IfSubStr{#2}{NoMandatory}{}{Instruction \textbf{prior} to use is \textbf{mandatory}. Check the wiki for who can help you.}
-		\IfSubStr{#2}{Approval}{You must also have a `\textbf{dangerous equipment waiver}' filed with the foundations trustees and been given \textbf{approval or card access} to use the machine.}{}
+		\IfSubStr{#2}{NoMandatory}{}{Read these instructions \textbf{prior} to use to prevent damage to you and the equipment. Check the wiki for more information.}
+		\IfSubStr{#2}{Induction}{You must have completed an induction to use the machine.}{}
 			
 		#3 % added to above instructions
 		
 		\IfSubStr{#2}{Noise}{\smallicontext{\seventoseven}{
-			Machine can only be used between 07:00 - 19:00 (be kind to our neighbours)
+			Machine can only be used between 07:00 - 19:00 (be kind to our neighbours) %not used in Bristol
 			}
 		}{}
 
-		\IfSubStr{#2}{Two}{\smallicontext{\twopersons}{A second person must be present during operation, have agreed to be your second, knows how to stop the machine and what to do in an emergency, including opening the door for paramedics if needed.	}
+		\IfSubStr{#2}{Two}{\smallicontext{\twopersons}{A second person must be present during operation, have agreed to be your second, knows how to stop the machine and what to do in an emergency, including opening the door for paramedics if needed.	} %not used in Bristol
 		}{}
+		\IfSubStr{#2}{Online}{Induction can be performed \textbf{online}. Complete the Induction to receive an unlock code. Make sure you lock up the machine after use!}{}
+		\IfSubStr{#2}{InPerson}{\textbf{Induction in person} is required. Post on the forum to arrange this.}{}
 
 		\IfSubStr{#2}{Log}{Report any use in the log - and \textbf{pay for it}!}{}
 
-		\IfSubStr{#2}{Dewalt}{Be sure to attach and power on the dust extractor.}{}
+		\IfSubStr{#2}{Dust}{Be sure to attach and power on the dust extractor. Move the gates to extract dust from your machine.}{}
 	}
 	\begin{multicols}{2}#4\end{multicols}
 	
 	\vspace{0.2cm}
 	#5
 %footer text at the bottom of the page.
-	If a machine is not clean or appears broken - then report this to the mailing list. Clean/fix prior to use.
 
-	\textbf{Report any damage, issues or accident within 24 hours to the mailing list.}
+	If a machine is not clean or appears broken, report it to the forum. Clean/fix prior to use.
+
+	\textbf{Report any damage, issues or accident within 24 hours to the forum.}
+
+        Notice something wrong with this poster? Suggest a change at https://github.com/bristolhackspace/SafetySheetsMachines/ or request a change in the forum.
 \end{center}
 \vfill
 \begin{flushright}

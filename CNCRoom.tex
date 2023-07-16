@@ -1,0 +1,215 @@
+%%%%%%%%%%
+%CNC ROOM
+%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%: CNC Room
+\machinePage{CNC Room} %title of machine.
+	{NoMandatory, InPerson}%safety options: Induction, blank (instruction mandatory), NoMandatory
+		% Additionally, options include: Online, InPerson, Log, Dust
+	{All of the machines in this room (currently) require in person inductions.} %further text on mandatory safety rules, appears at top of page with Log warning, Dust warning, Induction, etc.
+	{%Main warnings, alerts, etc.
+%	\action{49}{General mandatory action sign}{} %Exclamation mark.
+%	\action{50}{Refer to instruction manual/booklet}{} %Person reading book.
+%	\action{51}{Wear ear protection}{} %Person wearing ear defenders.
+%	\action{52}{Wear eye protection}{} %Person wearing safety glasses.
+%	\action{55}{Opaque eye protection must be worn}{} %Person wearing opaque safety glasses.
+%	\action{56}{Wear safety footwear}{} %Safety boots.
+%	\action{57}{Wear protective gloves}{} %Gloves.
+%	\action{58}{Wear protective clothing}{Wear tight fitting clothing, keep long hair tied up, no jewellery or anything else that can be caught by the machine.} %symbol of overalls.
+%	\action{61}{Wear a face shield}{} %head wearing a face shield.
+%	\action{64}{Wear a mask}{} %head wearing a covid style mask.
+%	\action{67}{Wear a welding mask}{} %head wearing a welding mask.
+%	\action{74}{Use protective apron}{} %person wearing an apron.
+%	\prohib{75}{General prohibition sign}{} %general prohibition sign with nothing in it.
+%	\warn{77}{no open flames}{} %lit match prohibition sign.  This is a "Prohib" sign but needed a different offset, so we use the Warn command.
+%	\warn{88}{No reaching in}{} %hand between two converging lines. This is a "Prohib" sign but needed a different offset, so we use the Warn command.
+%	\prohib{100}{Do not wear gloves}{} %gloves prohibition sign.
+%	\prohib{107}{General warning sign}{} %Exclamation mark in warning triangle. This is an "alert/Warn" sign but needed a different offset, so we use the warn command.
+%	\warn{110}{Laser beam}{} %Laser beam warning triangle.
+%	\warn{117}{Slippery surface}{} %Human figure falling backwards warning triangle.
+%	\warn{123}{Hot Surface}{} %hot surface warning triangle.
+%	\warn{124}{Automatic start-up}{} %spinny thing go fast warning triangle.
+%	\warn{127}{flammable material}{} %flame warning trianble.
+%	\warn{128}{Sharp element}{} %bandaged hand above sharp point.
+%	\warn{130}{Crushing of hands}{} %hands getting crushed.
+% Other symbols are available in the ISO PDF in the github. Extract the actual pagenumber. 
+	}
+	{%Final footer warning
+	
+	}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%: Leaving the CNC room
+\machinePage{Leaving the CNC room?} %title of machine.
+	{}%safety options: Induction, blank (instruction mandatory), NoMandatory
+		% Additionally, options include: Online, InPerson, Log, Dust
+	{} %further text on mandatory safety rules, appears at top of page with Log warning, Dust warning, Induction, etc.
+	{%Main warnings, alerts, etc.
+	\action{49}{Ensure the CNC Laser is off and the PC locked.}{Take your skeletons with you.} %Exclamation mark.
+	\action{49}{Ensure the 3D printers are locked out if not in use.}{} %Exclamation mark.
+	\action{49}{If you're leaving a print unattended - post on the Discourse long prints chat!}{} %Exclamation mark.
+
+% Other symbols are available in the ISO PDF in the github. Extract the actual pagenumber. 
+	}
+	{%Final footer warning
+	If the bin is full - empty it. Spare bags are in the consumables cabinet, and the bin is outside > right > right.	
+	}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%: CNC Mill
+\machinePage{CNC Mill} %title of machine.
+	{InPerson}%safety options: Induction, blank (instruction mandatory), NoMandatory
+		% Additionally, options include: Online, InPerson, Log, Dust
+	{} %further text on mandatory safety rules, appears at top of page with Log warning, Dust warning, Induction, etc.
+	{%Main warnings, alerts, etc.
+%	\action{49}{General mandatory action sign}{} %Exclamation mark.
+%	\action{50}{Refer to instruction manual/booklet}{} %Person reading book.
+%	\action{51}{Wear ear protection}{} %Person wearing ear defenders.
+	\action{52}{Wear eye protection}{When the door is open.} %Person wearing safety glasses.
+%	\action{55}{Opaque eye protection must be worn}{} %Person wearing opaque safety glasses.
+%	\action{56}{Wear safety footwear}{} %Safety boots.
+%	\action{57}{Wear protective gloves}{} %Gloves.
+%	\action{58}{Wear protective clothing}{Wear tight fitting clothing, keep long hair tied up, no jewellery or anything else that can be caught by the machine.} %symbol of overalls.
+%	\action{61}{Wear a face shield}{} %head wearing a face shield.
+%	\action{64}{Wear a mask}{} %head wearing a covid style mask.
+%	\action{67}{Wear a welding mask}{} %head wearing a welding mask.
+%	\action{74}{Use protective apron}{} %person wearing an apron.
+	\prohib{75}{No wood or dusty materials. No ferrous metals (e.g. Steel)}{unless you know what you're doing with steel.} %general prohibition sign with nothing in it.
+%	\warn{77}{no open flames}{} %lit match prohibition sign. This is a "Prohib" sign but needed a different offset, so we use the Warn command.
+	\warn{88}{No reaching in}{} %hand between two converging lines. This is a "Prohib" sign but needed a different offset, so we use the Warn command.
+%	\prohib{100}{Do not wear gloves}{} %gloves prohibition sign.
+	\prohib{107}{Flying Debris Hazard}{} %Exclamation mark in warning triangle. This is an "Alert" sign but needed a different offset, so we use the prohib command.
+%	\warn{110}{Laser beam}{} %Laser beam warning triangle.
+%	\warn{117}{Slippery surface}{} %Human figure falling backwards warning triangle.
+%	\warn{123}{Hot Surface}{} %hot surface warning triangle.
+	\warn{124}{Automatic start-up}{} %spinny thing go fast warning triangle.
+%	\warn{127}{flammable material}{} %flame warning trianble.
+	\warn{128}{Sharp element}{} %bandaged hand above sharp point.
+	\warn{130}{Crushing of hands}{} %hands getting crushed.
+% Other symbols are available in the ISO PDF in the github. Extract the actual pagenumber. 
+	}
+	{%Final footer warning
+	https://wiki.bristolhackspace.org/equipment/cnc/mill
+  
+	}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%: PCB Mill
+\machinePage{PCB Mill} %title of machine.
+	{InPerson}%safety options: Induction, blank (instruction mandatory), NoMandatory
+		% Additionally, options include: Online, InPerson, Log, Dust
+	{} %further text on mandatory safety rules, appears at top of page with Log warning, Dust warning, Induction, etc.
+	{%Main warnings, alerts, etc.
+	\action{49}{PCB must be securely fixed down.}{} %Exclamation mark.
+%	\action{50}{Refer to instruction manual/booklet}{} %Person reading book.
+%	\action{51}{Wear ear protection}{} %Person wearing ear defenders.
+%	\action{52}{Wear eye protection}{} %Person wearing safety glasses.
+%	\action{55}{Opaque eye protection must be worn}{} %Person wearing opaque safety glasses.
+%	\action{56}{Wear safety footwear}{} %Safety boots.
+%	\action{57}{Wear protective gloves}{} %Gloves.
+%	\action{58}{Wear protective clothing}{Wear tight fitting clothing, keep long hair tied up, no jewellery or anything else that can be caught by the machine.} %symbol of overalls.
+%	\action{61}{Wear a face shield}{} %head wearing a face shield.
+%	\action{64}{Wear a mask}{} %head wearing a covid style mask.
+%	\action{67}{Wear a welding mask}{} %head wearing a welding mask.
+%	\action{74}{Use protective apron}{} %person wearing an apron.
+	\prohib{75}{Do not operate the spindle with the door open.}{} %general prohibition sign with nothing in it.
+%	\warn{77}{no open flames}{} %lit match prohibition sign. This is a "Prohib" sign but needed a different offset, so we use the Warn command.
+%	\warn{88}{No reaching in}{} %hand between two converging lines. This is a "Prohib" sign but needed a different offset, so we use the Warn command.
+%	\prohib{100}{Do not wear gloves}{} %gloves prohibition sign.
+%	\prohib{107}{General warning sign}{} %Exclamation mark in warning triangle. This is an "Alert" sign but needed a different offset, so we use the prohib command.
+%	\warn{110}{Laser beam}{} %Laser beam warning triangle.
+%	\warn{117}{Slippery surface}{} %Human figure falling backwards warning triangle.
+%	\warn{123}{Hot Surface}{} %hot surface warning triangle.
+	\warn{124}{Keep hands away from moving parts during use.}{} %spinny thing go fast warning triangle.
+%	\warn{127}{flammable material}{} %flame warning trianble.
+	\warn{128}{Sharp element}{avoid touching the sharp bits when changing tools.} %bandaged hand above sharp point.
+%	\warn{130}{Crushing of hands}{} %hands getting crushed.
+% Other symbols are available in the ISO PDF in the github. Extract the actual pagenumber. 
+	}
+	{%Final footer warning
+	
+	}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%: Just Add Sharks Laser Cutter
+\machinePage{Laser Cutter} %title of machine.
+	{InPerson}%safety options: Induction, blank (instruction mandatory), NoMandatory
+		% Additionally, options include: Online, InPerson, Log, Dust
+	{Do not leave the room while in use.} %further text on mandatory safety rules, appears at top of page with Log warning, Dust warning, Induction, etc.
+	{%Main warnings, alerts, etc.
+	\action{49}{Do not use unless coolant temperature is below 24c}{Wait for coolant to drop below 24c before turning off.} %Exclamation mark.
+%	\action{50}{Refer to instruction manual/booklet}{} %Person reading book.
+%	\action{51}{Wear ear protection}{} %Person wearing ear defenders.
+%	\action{52}{Wear eye protection}{} %Person wearing safety glasses.
+%	\action{55}{Opaque eye protection must be worn}{} %Person wearing opaque safety glasses.
+%	\action{56}{Wear safety footwear}{} %Safety boots.
+%	\action{57}{Wear protective gloves}{} %Gloves.
+%	\action{58}{Wear protective clothing}{Wear tight fitting clothing, keep long hair tied up, no jewellery or anything else that can be caught by the machine.} %symbol of overalls.
+%	\action{61}{Wear a face shield}{} %head wearing a face shield.
+%	\action{64}{Wear a mask}{} %head wearing a covid style mask.
+%	\action{67}{Wear a welding mask}{} %head wearing a welding mask.
+%	\action{74}{Use protective apron}{} %person wearing an apron.
+	\prohib{75}{No water or wet/damp materials}{} %general prohibition sign with nothing in it.
+%	\warn{77}{no open flames}{} %lit match prohibition sign. This is a "Prohib" sign but needed a different offset, so we use the Warn command.
+%	\warn{88}{No reaching in}{} %hand between two converging lines. This is a "Prohib" sign but needed a different offset, so we use the Warn command.
+%	\prohib{100}{Do not wear gloves}{} %gloves prohibition sign.
+%	\warn{84}{Do not extinguish with water.}{Use the CO2 cylinder.}
+%	\prohib{107}{General warning sign}{} %Exclamation mark in warning triangle.  This is an "Alert" sign but needed a different offset, so we use the prohib command.
+	\warn{110}{Laser beam}{This should turn off if you open the door early. But don't be stupid with it!} %Laser beam warning triangle.
+%	\warn{117}{Slippery surface}{} %Human figure falling backwards warning triangle.
+%	\warn{123}{Hot Surface}{} %hot surface warning triangle.
+%	\warn{124}{Automatic start-up}{} %spinny thing go fast warning triangle.
+	\warn{127}{flammable material}{Everything that you're allowed to put in here is flammable. Be careful.} %flame warning trianble.
+%	\warn{128}{Sharp element}{} %bandaged hand above sharp point.
+	\warn{130}{Crushing of hands}{The X,Y,Z axis do not have sensors, so they could crush your hands if you reach in while moving the gantry or table.} %hands getting crushed.
+% Other symbols are available in the ISO PDF in the github. Extract the actual pagenumber. 
+	}
+	{%Final footer warning
+	Do \textit{not} add sharks to this laser cutter.
+	}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%:   3D Printers.
+\machinePage{3D Printers} %title of machine.
+	{InPerson}%safety options: Induction, blank (instruction mandatory), NoMandatory
+		% Additionally, options include: Online, InPerson, Log, Dust
+	{Try to remain in the hackspace during your print. If you start a print and need to leave, you MUST post on the forum. There is a chat group set up for this.
+ Before printing, check for obvious faults.
+ Before printing, check the print surface is clean and wipe with isopropyl alcohol. You may wish to use glue stick.
+ If you need to stop the print, use the printer Stop function, not the emergency stop.
+ } %further text on mandatory safety rules, appears at top of page with Log warning, Dust warning, Induction, etc.
+	{%Main warnings, alerts, etc.
+	\action{49}{Always flush with PLA after using with any other filament type.}{} %Exclamation mark.
+	\action{49}{Do Not exceed the extrusion temperature limit of 285c.}{} %Exclamation mark.
+ 	\action{49}{Wait until the printer has cooled to below 40c before turning off.}{Use this time to clean up waste plastic.} %Exclamation mark.
+%	\action{50}{Refer to instruction manual/booklet}{} %Person reading book.
+%	\action{51}{Wear ear protection}{} %Person wearing ear defenders.
+%	\action{52}{Wear eye protection}{} %Person wearing safety glasses.
+%	\action{55}{Opaque eye protection must be worn}{} %Person wearing opaque safety glasses.
+%	\action{56}{Wear safety footwear}{} %Safety boots.
+%	\action{57}{Wear protective gloves}{} %Gloves.
+%	\action{58}{Wear protective clothing}{Wear tight fitting clothing, keep long hair tied up, no jewellery or anything else that can be caught by the machine.} %symbol of overalls.
+%	\action{61}{Wear a face shield}{} %head wearing a face shield.
+%	\action{64}{Wear a mask}{} %head wearing a covid style mask.
+%	\action{67}{Wear a welding mask}{} %head wearing a welding mask.
+%	\action{74}{Use protective apron}{} %person wearing an apron.
+	\prohib{75}{Do not change printer settings.}{You can change print settings, but not printer.} %general prohibition sign with nothing in it.
+ 	\prohib{75}{Avoid using live-adjust Z function to change height more than 0.2mm.}{} %general prohibition sign with nothing in it.
+%	\warn{77}{no open flames}{} %lit match prohibition sign. This is a "Prohib" sign but needed a different offset, so we use the Warn command.
+%	\warn{88}{No reaching in}{} %hand between two converging lines. This is a "Prohib" sign but needed a different offset, so we use the Warn command.
+%	\prohib{100}{Do not wear gloves}{} %gloves prohibition sign.
+%	\prohib{107}{General warning sign}{} %Exclamation mark in warning triangle. This is an "Alert" sign but needed a different offset, so we use the prohib command.
+%	\warn{110}{Laser beam}{} %Laser beam warning triangle.
+%	\warn{117}{Slippery surface}{} %Human figure falling backwards warning triangle.
+	\warn{123}{Hot Surface and very hot extruder head}{} %hot surface warning triangle.
+%	\warn{124}{Automatic start-up}{Machine may suddenly start moving.} %spinny thing go fast warning triangle.
+%	\warn{127}{flammable material}{} %flame warning trianble.
+%	\warn{128}{Sharp element}{} %bandaged hand above sharp point.
+	\warn{130}{Crushing of hands}{The machine does not know where your hands are. Be careful where you put them.} %hands getting crushed.
+% Other symbols are available in the ISO PDF in the github. Extract the actual pagenumber. 
+	}
+	{%Final footer warning
+	https://wiki.bristolhackspace.org/equipment/cnc/prusamk3
+  
+	}

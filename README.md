@@ -1,5 +1,5 @@
 Safetysheets from the Makerspace Leiden (http://makerspaceleiden.nl/).  
-
+Now adapted for Bristol Hackspace (https://bristolhackspace.org/).
 
 ### Compiling 
 Option A: use GitHub Actions to compile the LaTeX online.
@@ -41,6 +41,7 @@ Optional:
 	action, prohib and warn -- extractors for the images from
 		the itialian ISO standard document. The numbers are
 		the coordinates on the page.
+		Of note: symbols/pages 88, 77, and 107 have non-standard symbol heights, so they use a different "command" to what you might expect. This *should* be made clear in the tex files, but isn't always!
 
 	decal -- thing that actually extracts the images from the
 		document. Has some funnyness as the gutter on the
