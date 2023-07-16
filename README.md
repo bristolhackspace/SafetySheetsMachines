@@ -30,7 +30,7 @@ Optional:
 
 2) base.tex
 	
-	macro's or `functions' that build the pages.
+	macro's or `functions' or `commands' that build the pages.
 
 	machinePage - a page about a machine - see file for arguments.
 		
