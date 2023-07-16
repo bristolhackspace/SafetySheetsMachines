@@ -3,6 +3,54 @@
 %%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%: Metal shop Pillar Drill
+\machinePage{Metal Pillar Drill} %title of machine.
+	{NoMandatory}%safety options: Induction, blank (instruction mandatory), NoMandatory
+		% Additionally, options include: Online, InPerson, Log, Dust
+	{Make sure you clamp your workpiece well - to avoid spinning.
+
+Be aware of other people around you.
+} %further text on mandatory safety rules, appears at top of page with Log warning, Dust warning, Induction, etc.
+	{%Main warnings, alerts, etc.
+%	\action{49}{General mandatory action sign}{} %Exclamation mark.
+%	\action{50}{Refer to instruction manual/booklet}{} %Person reading book.
+%	\action{51}{Wear ear protection}{} %Person wearing ear defenders.
+	\action{52}{Eye protection recommended}{Swarf will fly. Marterial can come loose.} %Person wearing safety glasses.
+%	\action{55}{Opaque eye protection must be worn}{} %Person wearing opaque safety glasses.
+%	\action{56}{Wear safety footwear}{} %Safety boots.
+%	\action{57}{Wear protective gloves}{} %Gloves.
+	\action{58}{Wear protective clothing}{Wear tight fitting clothing, keep long hair tied up, no jewellery or anything else that can be caught by the machine.} %symbol of overalls.
+%	\action{61}{Wear a face shield}{} %head wearing a face shield.
+	\action{64}{Respiratory protection is recommended}{} %head wearing a covid style mask.
+%	\action{67}{Wear a welding mask}{} %head wearing a welding mask.
+%	\action{74}{Use protective apron}{} %person wearing an apron.
+%	\prohib{75}{General prohibition sign}{} %general prohibition sign with nothing in it.
+%	\warn{77}{no open flames}{} %lit match prohibition sign.  This is a "Prohib" sign but needed a different offset, so we use the Warn command.
+%	\warn{88}{No reaching in}{} %hand between two converging lines. This is a "Prohib" sign but needed a different offset, so we use the Warn command.
+	\prohib{100}{Do not wear gloves}{Especially strong leather ones. They get caught easily and then `help' ripping body parts off.} %gloves prohibition sign.
+%	\prohib{107}{General warning sign}{} %Exclamation mark in warning triangle. This is an "alert/Warn" sign but needed a different offset, so we use the warn command.
+%	\warn{110}{Laser beam}{} %Laser beam warning triangle.
+%	\warn{117}{Slippery surface}{} %Human figure falling backwards warning triangle.
+%	\warn{123}{Hot Surface}{} %hot surface warning triangle.
+%	\warn{124}{Automatic start-up}{} %spinny thing go fast warning triangle.
+%	\warn{127}{flammable material}{} %flame warning trianble.
+%	\warn{128}{Sharp element}{} %bandaged hand above sharp point.
+	\warn{130}{Crushing}{Risk of crushing -- the machine does not have any sensors that detect obstacles. The drill is operated by gears. They will not slip or stop.} %hands getting crushed.
+% Other symbols are available in the ISO PDF in the github. Extract the actual pagenumber. 
+	}
+	{%Final footer warning
+	\textbf{Hints and Tips}
+  Cutting oil is your friend.
+  Drill a pilot hole using smaller bits, then work your way up in size.
+  If you run out of bits on the wall, top up from the drill bit drawer. If the drawer runs out, check the consumables cupboard or order more. The hackspace will reimburse you.
+  Sheet metal: Don't use a normal twist drill. Use a step drill instead. Ensure the work is well clamped.
+  
+   https://wiki.bristolhackspace.org/equipment/woodshop/floor-standing-pillar-drill
+	
+	}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %: Metal Lathe
 \machinePage{Metal Lathe}{Induction}{
 Be careful when using the auto-feed; especially with cutters near the revolving head.
