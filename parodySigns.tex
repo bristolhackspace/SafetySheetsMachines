@@ -30,3 +30,21 @@
 	{%Final footer warning
 	
 	}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%: Warning
+\machinePage{HoogsMead} %title of machine.
+	{InPerson}%safety options: Induction, blank (instruction mandatory), NoMandatory
+		% Additionally, options include: Online, InPerson, Log, Dust
+	{Contains 525ML pure ethanol}
+	{%Main warnings, alerts, etc.
+	\action{49}{Must be drunk in moderation.}{No more than 200ml at a time.} %Exclamation mark.
+	\action{50}{May induce vomiting. Refer to instruction manual if so.}{} %Person reading book.
+	\prohib{75}{Consumption prohibited for under 18s.}{} %general prohibition sign with nothing in it.
+	\prohib{107}{May taste good.}{} %Exclamation mark in warning triangle. This is an "alert/Warn" sign but needed a different offset, so we use the warn command.
+ 
+	}
+	{%Final footer warning
+	HoogsMead. 10.5%. Produce of Hoog's Garage.
+	}
+
