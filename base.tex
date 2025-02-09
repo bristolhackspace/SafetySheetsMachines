@@ -43,9 +43,9 @@
 	       % The ISO document has a 'gutter' - so we shift the X a bit on the left/right page.
 	       %
 		\ifthenelse{\isodd{#1}}{ %if the pagenumber is odd, use this location for the image
-			\includegraphics[width=0.9\textwidth,page=#1,viewport=103 #3 291 #4,clip=true]{13GR_PistopioimeniSimansi_ISO_7010.pdf}
+			\includegraphics[width=0.9\textwidth,page=#1,viewport=103 #3 291 #4,clip=true]{./media/13GR_PistopioimeniSimansi_ISO_7010.pdf}
 		}{ %else (because the pagenumber is even), use this location for the image.
-			\includegraphics[width=0.9\textwidth,page=#1,viewport=70 #3 261 #4,clip=true]{13GR_PistopioimeniSimansi_ISO_7010.pdf}
+			\includegraphics[width=0.9\textwidth,page=#1,viewport=70 #3 261 #4,clip=true]{./media/13GR_PistopioimeniSimansi_ISO_7010.pdf}
 		}
 	\end{minipage}
 	\begin{minipage}[t]{0.6\textwidth}
@@ -65,7 +65,7 @@
 %
 % Two person symbol
 \newcommand{\twopersons}{
-\raisebox{-.5\height}{\includegraphics[width=6mm]{File:Aiga_toiletsq_men}}\textbf{x 2} 
+\raisebox{-.5\height}{\includegraphics[width=6mm]{FileAiga_toiletsq_men}}\textbf{x 2} 
 }
 
 % Some home made symbols which are not part of the official ISO list of symbols:
