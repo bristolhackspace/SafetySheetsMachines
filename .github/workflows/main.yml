@@ -9,7 +9,7 @@ jobs:
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v3
         with:
-          root_file: safety-sheets.tex
+          root_file: 01-safety-sheets.tex
       - name: Upload PDF file
         uses: actions/upload-artifact@v4
         with:
