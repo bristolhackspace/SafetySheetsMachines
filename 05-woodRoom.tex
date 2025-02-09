@@ -1,74 +1,20 @@
-\documentclass[11pt, oneside]{book}
-\newcommand{\version}{v1.02}
 
-\include{base}
-
-\begin{document}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%: Intro sheet to the hackspace
-\machinePage{Bristol Hackspace}{NoMandatory}{
-Observe all safety instructions. Induction or Instructions are required for some of the machines. Ask someone for help, consult the wiki or message the forum when in doubt.
-
-Ask for instructions if you are unfamiliar on how to use a tool. This is to protect you and to protect the tool. This is a shared space -- consider others around you before using a machine; and be aware of others working nearby.  \textbf{Leave the space cleaner than you found it.}
-
-Make sure you know where the \textbf{emergency stops and fire extinguishers} are. In case of "call 999"-type emergencies, make sure there is someone at the door to let paramedics in. If you have to stay with the wounded, jam the doors open. Bring your key(card)s with you if you have to let emergency personnel in.
-}{
-\action{58}{Wear protective clothing}{Wear tight fitting clothing, keep long hair tied up, no jewellery or anything else that can be caught by a machine. Consider that others may be working at the space -- and you may be in close range of their machines too.
-
-%Be careful with gloves -- they can be caught in the machine and when made of a sturdy material, help rip your finger off. Observe the `no gloves' signs.
-}
-\action{56}{Wear appropriate footwear}{No sandals or similar in the wood or metal shop.}
-\action{64}{Wear a mask when needed}{Especially when cutting materials such as MDF}
-\action{52}{Eye protection recommended}{Also consider that hard-metal cutters and ceramics can suddenly shatter.}
-\action{57}{Protective gloves recommended}{But also: be careful with gloves -- they can be caught in the machine and when made of a sturdy material, help rip your finger off. }
-\action{51}{Ear protection recommended}{}
-}{If something breaks or is amiss -- it is \textbf{your} responsibility to report it.  If you find something broken -- report it before using/repairing the machine.
-}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%: Template
-\machinePage{Template} %title of machine.
-	{NoMandatory, Log, Dust, Online, InPerson}%safety options: Induction, blank (instruction mandatory), NoMandatory
-		% Additionally, options include: Online, InPerson, Log, Dust
-	{} %further text on mandatory safety rules, appears at top of page with Log warning, Dust warning, Induction, etc.
-	{%Main warnings, alerts, etc.
-%	\action{49}{General mandatory action sign}{} %Exclamation mark.
-%	\action{50}{Refer to instruction manual/booklet}{} %Person reading book.
-%	\action{51}{Wear ear protection}{} %Person wearing ear defenders.
-%	\action{52}{Wear eye protection}{} %Person wearing safety glasses.
-%	\action{55}{Opaque eye protection must be worn}{} %Person wearing opaque safety glasses.
-%	\action{56}{Wear safety footwear}{} %Safety boots.
-%	\action{57}{Wear protective gloves}{} %Gloves.
-%	\action{58}{Wear protective clothing}{Wear tight fitting clothing, keep long hair tied up, no jewellery or anything else that can be caught by the machine.} %symbol of overalls.
-%	\action{61}{Wear a face shield}{} %head wearing a face shield.
-%	\action{64}{Wear a mask}{} %head wearing a covid style mask.
-%	\action{67}{Wear a welding mask}{} %head wearing a welding mask.
-%	\action{74}{Use protective apron}{} %person wearing an apron.
-%	\prohib{75}{General prohibition sign}{} %general prohibition sign with nothing in it.
-%	\warn{77}{no open flames}{} %lit match prohibition sign.  This is a "Prohib" sign but needed a different offset, so we use the Warn command.
-%	\warn{88}{No reaching in}{} %hand between two converging lines. This is a "Prohib" sign but needed a different offset, so we use the Warn command.
-%	\prohib{100}{Do not wear gloves}{} %gloves prohibition sign.
-%	\prohib{107}{General warning sign}{} %Exclamation mark in warning triangle. This is an "alert/Warn" sign but needed a different offset, so we use the warn command.
-%	\warn{110}{Laser beam}{} %Laser beam warning triangle.
-%	\warn{117}{Slippery surface}{} %Human figure falling backwards warning triangle.
-%	\warn{123}{Hot Surface}{} %hot surface warning triangle.
-%	\warn{124}{Automatic start-up}{} %spinny thing go fast warning triangle.
-%	\warn{127}{flammable material}{} %flame warning trianble.
-%	\warn{128}{Sharp element}{} %bandaged hand above sharp point.
-%	\warn{130}{Crushing of hands}{} %hands getting crushed.
-% Other symbols are available in the ISO PDF in the github. Extract the actual pagenumber. 
-	}
-	{%Final footer warning
-	
-	}
+%From Wiki:
+    % Bandsaw - Record Power BS300E
+    % Belt & Disc Sander - Clarke CS6-9C
+    % Charnwood PT10S Planer Thicknessser
+    % Floor Standing Pillar Drill - Startrite
+    % Mitre Saw - Evolution R255SMS-DB
+    % Router Table - Triton RTA 300
+    % Table Saw - DeWalt DWE7485
+    % Wood CNC - Shapeoko 3 XL -Not yet commissioned
+    % Woodturning Lathe
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %: Wood Workshop
 \machinePage{Wood Workshop} %title of machine.
 	{NoMandatory}%safety options: Induction, blank (instruction mandatory), NoMandatory
-		% Additionally, options include: Online, InPerson, Log, Dust
+		% Additionally, options include: Online, InPerson, Log, Dust, Two
 	{
 The wood shop is separated from the rest of the space for dust- and clean-tool control reasons.  
 
@@ -112,7 +58,7 @@ The wood shop is separated from the rest of the space for dust- and clean-tool c
 %: Leaving the Wood Shop
 \machinePage{Leaving the Wood Room?} %title of machine.
 	{}%safety options: Induction, blank (instruction mandatory), NoMandatory
-		% Additionally, options include: Online, InPerson, Log, Dust
+		% Additionally, options include: Online, InPerson, Log, Dust, Two
 	{Tidy up!} %further text on mandatory safety rules, appears at top of page with Log warning, Dust warning, Induction, etc.
 	{%Main warnings, alerts, etc.
 	\action{49}{Put everything back where it should be!}{} %Exclamation mark.
@@ -127,8 +73,8 @@ The wood shop is separated from the rest of the space for dust- and clean-tool c
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %: Pillar Drill
 \machinePage{Pillar Drill} %title of machine.
-	{NoMandatory}%safety options: Induction, blank (instruction mandatory), NoMandatory
-		% Additionally, options include: Online, InPerson, Log, Dust
+	{NoMandatory, Two}%safety options: Induction, blank (instruction mandatory), NoMandatory
+		% Additionally, options include: Online, InPerson, Log, Dust, Two
 	{Do not attempt to change the drill speed, as the gearing is non-standard.
 	
 Make sure you clamp your workpiece well - to avoid spinning.
@@ -171,8 +117,8 @@ Be aware of other people around you (especially through the door to the main roo
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %: Wood Lathe
 \machinePage{Wood Lathe} %title of machine.
-	{Induction, InPerson, Dust}%safety options: Induction, blank (instruction mandatory), NoMandatory
-		% Additionally, options include: Online, InPerson, Log, Dust
+	{Induction, InPerson, Dust, Two}%safety options: Induction, blank (instruction mandatory), NoMandatory
+		% Additionally, options include: Online, InPerson, Log, Dust, Two
 	{This machine is for WOOD. See the wiki or internet for other materials.
 } %further text on mandatory safety rules, appears at top of page with Log warning, Dust warning, Induction, etc.
 	{%Main warnings, alerts, etc.
@@ -212,8 +158,8 @@ Be aware of other people around you (especially through the door to the main roo
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %: Mitre Saw
 \machinePage{Mitre Saw} %title of machine.
-	{Induction, Dust, Online}%safety options: Induction, blank (instruction mandatory), NoMandatory
-		% Additionally, options include: Online, InPerson, Log, Dust
+	{Induction, Dust, Online, Two}%safety options: Induction, blank (instruction mandatory), NoMandatory
+		% Additionally, options include: Online, InPerson, Log, Dust, Two
 	{This machine is for WOOD only.
 } %further text on mandatory safety rules, appears at top of page with Log warning, Dust warning, Induction, etc.
 	{%Main warnings, alerts, etc.
@@ -252,8 +198,8 @@ Be aware of other people around you (especially through the door to the main roo
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %: Circular Table Saw
 \machinePage{Table Saw} %title of machine.
-	{NoMandatory, Dust, Portal}%safety options: Induction, blank (instruction mandatory), NoMandatory
-		% Additionally, options include: Online, InPerson, Log, Dust
+	{NoMandatory, Dust, Portal, Two}%safety options: Induction, blank (instruction mandatory), NoMandatory
+		% Additionally, options include: Online, InPerson, Log, Dust, Two
 	{This machine is for WOOD only.
 	
 	Let others in the room know before you start using it!
@@ -295,8 +241,8 @@ Be aware of other people around you (especially through the door to the main roo
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %: Wood Bandsaw
 \machinePage{Wood Bandsaw} %title of machine.
-	{Induction, Dust, InPerson}%safety options: Induction, blank (instruction mandatory), NoMandatory
-		% Additionally, options include: Online, InPerson, Log, Dust
+	{Induction, Dust, Portal, Two}%safety options: Induction, blank (instruction mandatory), NoMandatory
+		% Additionally, options include: Online, InPerson, Log, Dust, Two
 	{This machine is for WOOD and PLASTIC only.
  There are three blade types in the hackspace:\newline
  1/4" for fine detail.\newline
@@ -342,8 +288,8 @@ Be aware of other people around you (especially through the door to the main roo
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %: Planer / Jointer
 \machinePage{Jointer} %title of machine.
-	{}%safety options: Induction, blank (instruction mandatory), NoMandatory
-		% Additionally, options include: Online, InPerson, Log, Dust
+	{Two}%safety options: Induction, blank (instruction mandatory), NoMandatory
+		% Additionally, options include: Online, InPerson, Log, Dust, Two
 	{This machine is for WOOD only.
 
 This machine does not have a dust collection nozzle. Ensure you clean up afterwards.
@@ -385,8 +331,8 @@ This machine does not have a dust collection nozzle. Ensure you clean up afterwa
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %: Thicknesser !!!
 \machinePage{Thickness Planer} %title of machine.
-	{Dust}%safety options: Induction, blank (instruction mandatory), NoMandatory
-		% Additionally, options include: Online, InPerson, Log, Dust
+	{Dust, Two}%safety options: Induction, blank (instruction mandatory), NoMandatory
+		% Additionally, options include: Online, InPerson, Log, Dust, Two
 	{The Dust extractor is not strong enough to pull all of the wood dust from the Thicknesser hose, so you may need to manually empty this in to the bin.
 } %further text on mandatory safety rules, appears at top of page with Log warning, Dust warning, Induction, etc.
 	{%Main warnings, alerts, etc.
@@ -427,8 +373,8 @@ This machine does not have a dust collection nozzle. Ensure you clean up afterwa
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %: Wood Router
 \machinePage{Wood Router(s)} %title of machine.
-	{NoMandatory}%safety options: Induction, blank (instruction mandatory), NoMandatory
-		% Additionally, options include: Online, InPerson, Log, Dust
+	{NoMandatory, Two}%safety options: Induction, blank (instruction mandatory), NoMandatory
+		% Additionally, options include: Online, InPerson, Log, Dust, Two
 	{This machine is for WOOD only.} %further text on mandatory safety rules, appears at top of page with Log warning, Dust warning, Induction, etc.
 	{%Main warnings, alerts, etc.
 %	\action{49}{General mandatory action sign}{} %Exclamation mark.
@@ -467,8 +413,8 @@ This machine does not have a dust collection nozzle. Ensure you clean up afterwa
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %: Belt and Disc Sander
 \machinePage{Belt and Disc Sander} %title of machine.
-	{NoMandatory, Dust}%safety options: Induction, blank (instruction mandatory), NoMandatory
-		% Additionally, options include: Online, InPerson, Log, Dust
+	{NoMandatory, Dust, Two}%safety options: Induction, blank (instruction mandatory), NoMandatory
+		% Additionally, options include: Online, InPerson, Log, Dust, Two
 	{} %further text on mandatory safety rules, appears at top of page with Log warning, Dust warning, Induction, etc.
 	{%Main warnings, alerts, etc.
         \action{49}{You can use the block of rubber to clean the belt and disc.}{It sits on the dust extractor tubes. Run the rubber over the belt and disc while it is running.}
@@ -502,52 +448,3 @@ This machine does not have a dust collection nozzle. Ensure you clean up afterwa
 
 	}
 	
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%:Bins
-\machinePage{Bins} %title of machine.
-	{}%safety options: Induction, blank (instruction mandatory), NoMandatory
-		% Additionally, options include: Online, InPerson, Log, Dust
-	{No Wood in the Bin!
-	General purpose bin for Plastic, Sawdust, Metal, paper.
-	} %further text on mandatory safety rules, appears at top of page with Log warning, Dust warning, Induction, etc.
-	{%Main warnings, alerts, etc.
-	\action{49}{Empty if full!}{Empty in to the green bin outside and to the right of the building. Bags are are in the consumables cupboard.} %Exclamation mark.
-%	\action{50}{Refer to instruction manual/booklet}{} %Person reading book.
-%	\action{51}{Wear ear protection}{} %Person wearing ear defenders.
-%	\action{52}{Wear eye protection}{} %Person wearing safety glasses.
-%	\action{55}{Opaque eye protection must be worn}{} %Person wearing opaque safety glasses.
-%	\action{56}{Wear safety footwear}{} %Safety boots.
-%	\action{57}{Wear protective gloves}{} %Gloves.
-%	\action{58}{Wear protective clothing}{Wear tight fitting clothing, keep long hair tied up, no jewellery or anything else that can be caught by the machine.} %symbol of overalls.
-%	\action{61}{Wear a face shield}{} %head wearing a face shield.
-%	\action{64}{Wear a mask}{} %head wearing a covid style mask.
-%	\action{67}{Wear a welding mask}{} %head wearing a welding mask.
-%	\action{74}{Use protective apron}{} %person wearing an apron.
-	\prohib{75}{No Wood!}{Sawdust is fine.} %general prohibition sign with nothing in it.
-	\prohib{75}{No Glass, e-Waste, or food.}{There are bins for glass and e-Waste. Take your food home.
-	
-	} %general prohibition sign with nothing in it.
-	\warn{77}{No Fires}{} %lit match prohibition sign. This is a "Prohib" sign but needed a different offset, so we use the Warn command.
-%	\warn{88}{No reaching in}{} %hand between two converging lines. This is a "Prohib" sign but needed a different offset, so we use the Warn command.
-%	\prohib{100}{Do not wear gloves}{} %gloves prohibition sign.
-%	\prohib{107}{General warning sign}{} %Exclamation mark in warning triangle. This is an "alert/Warn" sign but needed a different offset, so we use the warn command.
-%	\warn{110}{Laser beam}{} %Laser beam warning triangle.
-%	\warn{117}{Slippery surface}{} %Human figure falling backwards warning triangle.
-%	\warn{123}{Hot Surface}{} %hot surface warning triangle.
-%	\warn{124}{Automatic start-up}{} %spinny thing go fast warning triangle.
-%	\warn{127}{flammable material}{} %flame warning trianble.
-%	\warn{128}{Sharp element}{} %bandaged hand above sharp point.
-%	\warn{130}{Crushing of hands}{} %hands getting crushed.
-% Other symbols are available in the ISO PDF in the github. Extract the actual pagenumber. 
-	}
-	{%Final footer warning
-	No, Seriously, Please don't put solid wood in here.
-	}
-	
-	
-\include{CNCRoom.tex}
-\include{metalRoom.tex}
-\include{ProjectStorage.tex}
-\include{parodySigns.tex}
-
-\end{document}  

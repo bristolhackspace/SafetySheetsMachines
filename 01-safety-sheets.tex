@@ -1,0 +1,118 @@
+\documentclass[11pt, oneside]{book}
+\newcommand{\version}{v2}
+
+\include{02-base}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%: Intro sheet to the hackspace
+\machinePage{Bristol Hackspace}{NoMandatory}{
+Observe all safety instructions. Induction or Instructions are required for some of the machines. Ask someone for help, consult the wiki or message the forum when in doubt.
+
+Ask for instructions if you are unfamiliar on how to use a tool. This is to protect you and to protect the tool. This is a shared space -- consider others around you before using a machine; and be aware of others working nearby.  \textbf{Leave the space cleaner than you found it.}
+
+Make sure you know where the \textbf{emergency stops and fire extinguishers} are. In case of "call 999"-type emergencies, make sure there is someone at the door to let paramedics in. If you have to stay with the wounded, jam the doors open. Bring your key(card)s with you if you have to let emergency personnel in.
+}{
+\action{58}{Wear protective clothing}{Wear tight fitting clothing, keep long hair tied up, no jewellery or anything else that can be caught by a machine. Consider that others may be working at the space -- and you may be in close range of their machines too.
+
+%Be careful with gloves -- they can be caught in the machine and when made of a sturdy material, help rip your finger off. Observe the `no gloves' signs.
+}
+\action{56}{Wear appropriate footwear}{No sandals or similar in the wood or metal shop.}
+\action{64}{Wear a mask when needed}{Especially when cutting materials such as MDF}
+\action{52}{Eye protection recommended}{Also consider that hard-metal cutters and ceramics can suddenly shatter.}
+\action{57}{Protective gloves recommended}{But also: be careful with gloves -- they can be caught in the machine and when made of a sturdy material, help rip your finger off. }
+\action{51}{Ear protection recommended}{}
+}{If something breaks or is amiss -- it is \textbf{your} responsibility to report it.  If you find something broken -- report it before using/repairing the machine.
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%: Template
+\machinePage{Template} %title of machine.
+	{NoMandatory, Log, Dust, Online, InPerson}%safety options: Induction, blank (instruction mandatory), NoMandatory
+		% Additionally, options include: Online, InPerson, Log, Dust, Two
+	{} %further text on mandatory safety rules, appears at top of page with Log warning, Dust warning, Induction, etc.
+	{%Main warnings, alerts, etc.
+%	\action{49}{General mandatory action sign}{} %Exclamation mark.
+%	\action{50}{Refer to instruction manual/booklet}{} %Person reading book.
+%	\action{51}{Wear ear protection}{} %Person wearing ear defenders.
+%	\action{52}{Wear eye protection}{} %Person wearing safety glasses.
+%	\action{55}{Opaque eye protection must be worn}{} %Person wearing opaque safety glasses.
+%	\action{56}{Wear safety footwear}{} %Safety boots.
+%	\action{57}{Wear protective gloves}{} %Gloves.
+%	\action{58}{Wear protective clothing}{Wear tight fitting clothing, keep long hair tied up, no jewellery or anything else that can be caught by the machine.} %symbol of overalls.
+%	\action{61}{Wear a face shield}{} %head wearing a face shield.
+%	\action{64}{Wear a mask}{} %head wearing a covid style mask.
+%	\action{67}{Wear a welding mask}{} %head wearing a welding mask.
+%	\action{74}{Use protective apron}{} %person wearing an apron.
+%	\prohib{75}{General prohibition sign}{} %general prohibition sign with nothing in it.
+%	\warn{77}{no open flames}{} %lit match prohibition sign.  This is a "Prohib" sign but needed a different offset, so we use the Warn command.
+%	\warn{88}{No reaching in}{} %hand between two converging lines. This is a "Prohib" sign but needed a different offset, so we use the Warn command.
+%	\prohib{100}{Do not wear gloves}{} %gloves prohibition sign.
+%	\prohib{107}{General warning sign}{} %Exclamation mark in warning triangle. This is an "alert/Warn" sign but needed a different offset, so we use the warn command.
+%	\warn{110}{Laser beam}{} %Laser beam warning triangle.
+%	\warn{117}{Slippery surface}{} %Human figure falling backwards warning triangle.
+%	\warn{123}{Hot Surface}{} %hot surface warning triangle.
+%	\warn{124}{Automatic start-up}{} %spinny thing go fast warning triangle.
+%	\warn{127}{flammable material}{} %flame warning trianble.
+%	\warn{128}{Sharp element}{} %bandaged hand above sharp point.
+%	\warn{130}{Crushing of hands}{} %hands getting crushed.
+% Other symbols are available in the ISO PDF in the github. Extract the actual pagenumber. 
+	}
+	{%Final footer warning
+	
+	}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%:Bins
+\machinePage{Bins} %title of machine.
+	{}%safety options: Induction, blank (instruction mandatory), NoMandatory
+		% Additionally, options include: Online, InPerson, Log, Dust, Two
+	{No Wood in the Bin!
+	General purpose bin for Plastic, Sawdust, Metal, paper.
+	} %further text on mandatory safety rules, appears at top of page with Log warning, Dust warning, Induction, etc.
+	{%Main warnings, alerts, etc.
+	\action{49}{Empty if full!}{Empty in to the green bin outside and to the right of the building. Bags are are in the consumables cupboard.} %Exclamation mark.
+%	\action{50}{Refer to instruction manual/booklet}{} %Person reading book.
+%	\action{51}{Wear ear protection}{} %Person wearing ear defenders.
+%	\action{52}{Wear eye protection}{} %Person wearing safety glasses.
+%	\action{55}{Opaque eye protection must be worn}{} %Person wearing opaque safety glasses.
+%	\action{56}{Wear safety footwear}{} %Safety boots.
+%	\action{57}{Wear protective gloves}{} %Gloves.
+%	\action{58}{Wear protective clothing}{Wear tight fitting clothing, keep long hair tied up, no jewellery or anything else that can be caught by the machine.} %symbol of overalls.
+%	\action{61}{Wear a face shield}{} %head wearing a face shield.
+%	\action{64}{Wear a mask}{} %head wearing a covid style mask.
+%	\action{67}{Wear a welding mask}{} %head wearing a welding mask.
+%	\action{74}{Use protective apron}{} %person wearing an apron.
+	\prohib{75}{No Wood!}{Sawdust is fine.} %general prohibition sign with nothing in it.
+	\prohib{75}{No Glass, e-Waste, or food.}{There are bins for glass and e-Waste. Take your food home.
+	
+	} %general prohibition sign with nothing in it.
+	\warn{77}{No Fires}{} %lit match prohibition sign. This is a "Prohib" sign but needed a different offset, so we use the Warn command.
+%	\warn{88}{No reaching in}{} %hand between two converging lines. This is a "Prohib" sign but needed a different offset, so we use the Warn command.
+%	\prohib{100}{Do not wear gloves}{} %gloves prohibition sign.
+%	\prohib{107}{General warning sign}{} %Exclamation mark in warning triangle. This is an "alert/Warn" sign but needed a different offset, so we use the warn command.
+%	\warn{110}{Laser beam}{} %Laser beam warning triangle.
+%	\warn{117}{Slippery surface}{} %Human figure falling backwards warning triangle.
+%	\warn{123}{Hot Surface}{} %hot surface warning triangle.
+%	\warn{124}{Automatic start-up}{} %spinny thing go fast warning triangle.
+%	\warn{127}{flammable material}{} %flame warning trianble.
+%	\warn{128}{Sharp element}{} %bandaged hand above sharp point.
+%	\warn{130}{Crushing of hands}{} %hands getting crushed.
+% Other symbols are available in the ISO PDF in the github. Extract the actual pagenumber. 
+	}
+	{%Final footer warning
+	No, Seriously, Please don't put solid wood in here.
+	}
+	
+	
+\include{03-CNCRoom.tex}
+\include{04-metalRoom.tex}
+\include{05-woodRoom.tex}
+\include{06-ProjectStorage.tex}
+
+% \include{98-unusedToolWarnings.tex}
+% \include{99-parodySigns.tex}
+
+\end{document}  
